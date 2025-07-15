@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 py-3 background-blur-lg border-b border-neutral-700/80">
-        <div className="container px-4 mx-auto relative text-sm">
+        <div className="container px-4 mx-auto relative text-[14px]">
             <div className="flex justify-between items-center">
                 <div className="flex items-center flex-shrink-0">
                     <img src={logo} alt="Caritas Logo" className="h-10 w-10 mr-2" />
@@ -24,8 +24,7 @@ function Navbar() {
                     <li><a href="#about" className="text-black-300 hover:text-black">Quienes Somos</a></li>
                     <li><a href="#proyecto" className="text-black-300 hover:text-black">Proyectos</a></li>
                     <li><a href="#contacto" className="text-black-300 hover:text-black">Contacto</a></li>
-                    <li><a href="#dona" className="bg-gradient-to-r from-red-800 to-red-900
-                    py-2 px-3 rounded-md text-white">Dona Aqui</a></li>
+                    
                 </ul>
                 <div className="hidden lg:flex justify-center space-x-5 items-center ml-12">
                     <a 
