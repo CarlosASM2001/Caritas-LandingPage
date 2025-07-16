@@ -13,7 +13,7 @@ function Navbar() {
     }
 
   return (
-    <nav className="sticky top-0 z-50 bg-white py-3 background-blur-lg border-b border-neutral-700/80">
+    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md py-3 border-b border-gray-200/50 shadow-sm">
         <div className="container px-4 mx-auto relative text-[14px]">
             <div className="flex justify-between items-center">
                 <div className="flex items-center flex-shrink-0">
@@ -50,7 +50,7 @@ function Navbar() {
                 </div>
             </div>
             {mobileDrawerOpen && (
-                <div className="absolute top-16 left-0 w-full bg-white shadow-lg z-50">
+                <div className="absolute top-16 left-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50 border border-gray-200/50">
                     <ul className="flex flex-col items-center space-y-4 py-4">
                         <li><a href="#inicio" className="text-black-300 hover:text-black">Inicio</a></li>
                         <li><Link to="/quienes-somos" className="text-black-300 hover:text-black">Quienes Somos</Link></li>
