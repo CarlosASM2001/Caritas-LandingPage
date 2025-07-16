@@ -2,6 +2,7 @@ import { useState } from "react";
 import {Menu, X} from 'lucide-react';
 import logo from "../assets/logo-navbar.png";
 import { Facebook, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -12,7 +13,7 @@ function Navbar() {
     }
 
   return (
-    <nav className="sticky top-0 z-50 py-3 background-blur-lg border-b border-neutral-700/80">
+    <nav className="sticky top-0 z-50 bg-white py-3 background-blur-lg border-b border-neutral-700/80">
         <div className="container px-4 mx-auto relative text-[14px]">
             <div className="flex justify-between items-center">
                 <div className="flex items-center flex-shrink-0">
@@ -21,7 +22,7 @@ function Navbar() {
                 </div>
                 <ul className="hidden lg:flex ml-auto space-x-12">
                     <li><a href="#inicio" className="text-black-300 hover:text-black">Inicio</a></li>
-                    <li><a href="#about" className="text-black-300 hover:text-black">Quienes Somos</a></li>
+                    <li><Link to="/quienes-somos" className="text-black-300 hover:text-black">Quienes Somos</Link></li>
                     <li><a href="#proyecto" className="text-black-300 hover:text-black">Proyectos</a></li>
                     <li><a href="#contacto" className="text-black-300 hover:text-black">Contacto</a></li>
                     
@@ -52,7 +53,7 @@ function Navbar() {
                 <div className="absolute top-16 left-0 w-full bg-white shadow-lg z-50">
                     <ul className="flex flex-col items-center space-y-4 py-4">
                         <li><a href="#inicio" className="text-black-300 hover:text-black">Inicio</a></li>
-                        <li><a href="#about" className="text-black-300 hover:text-black">Quienes Somos</a></li>
+                        <li><Link to="/quienes-somos" className="text-black-300 hover:text-black">Quienes Somos</Link></li>
                         <li><a href="#proyecto" className="text-black-300 hover:text-black">Proyectos</a></li>
                         <li><a href="#contacto" className="text-black-300 hover:text-black">Contacto</a></li>
                         <li><a href="#dona" className="bg-gradient-to-r from-red-800 to-red-900
