@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar.jsx'
 import Banner from './components/Banner.jsx'
+import NoticiasDestacados from './components/NoticiasDestacados.jsx'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Navbar />
       <Banner />
+      <NoticiasDestacados />
     </div>
   )
 }
