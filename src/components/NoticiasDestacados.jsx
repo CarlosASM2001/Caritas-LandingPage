@@ -1,68 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Calendar, ArrowRight } from 'lucide-react';
+import { getNoticiasDestacadas } from '../data/noticiasData.js';
 
 const NoticiasDestacados = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-  // Data
-  const noticias = [
-    {
-      id: 1,
-      titulo: "Proyecto de Desarrollo Rural en San Cristóbal",
-      descripcion: "Promovemos la agricultura sostenible y el desarrollo económico en comunidades rurales.",
-      imagen: "/src/assets/banner1.jpg",
-      fecha: "2024-01-15",
-      categoria: "Desarrollo Rural",
-      link: "#"
-    },
-    {
-      id: 2,
-      titulo: "Apoyo a la Infancia en San Cristóbal",
-      descripcion: "Brindando educación y apoyo nutricional a niños y niñas en situación de vulnerabilidad.",
-      imagen: "/src/assets/banner2.jpg",
-      fecha: "2024-01-10",
-      categoria: "Infancia",
-      link: "#"
-    },
-    {
-      id: 3,
-      titulo: "Fortalecimiento Comunitario",
-      descripcion: "Proyecto con la participación ciudadana y el liderazgo comunitario.",
-      imagen: "/src/assets/banner3.jpg",
-      fecha: "2024-01-05",
-      categoria: "Comunidad",
-      link: "#"
-    },
-    {
-      id: 4,
-      titulo: "Programa de Alimentación Escolar",
-      descripcion: "Garantizando la nutrición adecuada de estudiantes en escuelas rurales.",
-      imagen: "/src/assets/banner4.jpg",
-      fecha: "2024-01-01",
-      categoria: "Alimentación",
-      link: "#"
-    },
-    {
-      id: 5,
-      titulo: "Construcción de Viviendas Dignas",
-      descripcion: "Mejorando las condiciones habitacionales de familias vulnerables.",
-      imagen: "/src/assets/banner6.jpeg",
-      fecha: "2023-12-28",
-      categoria: "Vivienda",
-      link: "#"
-    },
-    {
-      id: 6,
-      titulo: "Capacitación en Oficios",
-      descripcion: "Formando a jóvenes y adultos en oficios que generen oportunidades de empleo.",
-      imagen: "/src/assets/banner7.jpg",
-      fecha: "2023-12-25",
-      categoria: "Capacitación",
-      link: "#"
-    }
-  ];
-
+  const noticias = getNoticiasDestacadas();
   const [itemsPerView, setItemsPerView] = useState(3);
   const maxIndex = Math.max(0, noticias.length - itemsPerView);
 
@@ -121,7 +65,7 @@ const NoticiasDestacados = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        {/* Header */}
+        {/* Cabezera */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Noticias y Destacados
@@ -151,7 +95,7 @@ const NoticiasDestacados = () => {
             <ChevronRight className="w-6 h-6 text-red-800 group-hover:text-red-900" />
           </button>
 
-          {/* Cards Container */}
+          {/* Cards Contenedor */}
           <div className="overflow-hidden">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
@@ -163,7 +107,7 @@ const NoticiasDestacados = () => {
                   className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3"
                 >
                   <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
-                    {/* Image */}
+                    {/* Imagen */}
                     <div className="relative h-48 overflow-hidden">
                       <img
                         src={noticia.imagen}
@@ -226,7 +170,7 @@ const NoticiasDestacados = () => {
           ))}
         </div>
 
-        {/* View All Button */}
+        {/* Boton  */}
         <div className="text-center mt-12">
           <a
             href="/noticias"

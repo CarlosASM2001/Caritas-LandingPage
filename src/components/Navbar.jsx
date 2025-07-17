@@ -54,7 +54,7 @@ function Navbar() {
                     <ul className="flex flex-col items-center space-y-4 py-4">
                         <li><Link to="/" className="text-black-300 hover:text-black">Inicio</Link></li>
                         <li><Link to="/quienes-somos" className="text-black-300 hover:text-black">Quienes Somos</Link></li>
-                        <li><Link to="/proyecto" className="text-black-300 hover:text-black">Proyectos</Link></li>
+                        <li><Link to="/noticias" className="text-black-300 hover:text-black">Noticias</Link></li>
                         <li><a href="#contacto" className="text-black-300 hover:text-black">Contacto</a></li>
                         <li><a href="#dona" className="bg-gradient-to-r from-red-800 to-red-900
                         py-2 px-3 rounded-md text-white">Dona Aqui</a></li>
