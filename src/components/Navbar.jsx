@@ -23,7 +23,7 @@ function Navbar() {
                 <ul className="hidden lg:flex ml-auto space-x-12">
                     <li><Link to="/" className="text-black-300 hover:text-black">Inicio</Link></li>
                     <li><Link to="/quienes-somos" className="text-black-300 hover:text-black">Quienes Somos</Link></li>
-                    <li><a href="#proyecto" className="text-black-300 hover:text-black">Proyectos</a></li>
+                    <li><Link to="/noticias" className="text-black-300 hover:text-black">Noticias</Link></li>
                     <li><a href="#contacto" className="text-black-300 hover:text-black">Contacto</a></li>
                     
                 </ul>
@@ -50,11 +50,11 @@ function Navbar() {
                 </div>
             </div>
             {mobileDrawerOpen && (
-                <div className="absolute top-16 left-0 w-full bg-[#f9f5f0] shadow-lg z-50">
+                <div className="absolute top-16 left-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50 border border-gray-200/50">
                     <ul className="flex flex-col items-center space-y-4 py-4">
-                        <li><a href="#inicio" className="text-black-300 hover:text-black">Inicio</a></li>
+                        <li><Link to="/" className="text-black-300 hover:text-black">Inicio</Link></li>
                         <li><Link to="/quienes-somos" className="text-black-300 hover:text-black">Quienes Somos</Link></li>
-                        <li><a href="#proyecto" className="text-black-300 hover:text-black">Proyectos</a></li>
+                        <li><Link to="/proyecto" className="text-black-300 hover:text-black">Proyectos</Link></li>
                         <li><a href="#contacto" className="text-black-300 hover:text-black">Contacto</a></li>
                         <li><a href="#dona" className="bg-gradient-to-r from-red-800 to-red-900
                         py-2 px-3 rounded-md text-white">Dona Aqui</a></li>
