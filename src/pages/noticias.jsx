@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Calendar, User, Tag, Search, Filter, ChevronDown, ArrowRight } from 'lucide-react';
+import PiePagina from "../components/piePagina.jsx";
 import Navbar from '../components/Navbar.jsx';
 import { 
   noticiasData, 
@@ -282,6 +283,7 @@ const Noticias = () => {
           )}
         </div>
       </section>
+      <PiePagina />
     </>
   );
 };
