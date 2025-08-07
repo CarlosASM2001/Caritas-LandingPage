@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, User, Tag, Search, Filter, ChevronDown, ArrowRight } from 'lucide-react';
 import PiePagina from "../components/piePagina.jsx";
 import Navbar from '../components/Navbar.jsx';
@@ -212,13 +213,13 @@ const Noticias = () => {
                       ))}
                     </div>
                     
-                    <a
-                      href={noticia.link}
+                    <Link
+                      to={`/noticias/${noticia.id}`}
                       className="inline-flex items-center text-red-800 hover:text-red-900 font-semibold group/link"
                     >
                       Leer más
                       <ArrowRight className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-200" />
-                    </a>
+                    </Link>
                   </div>
                 </article>
               ))}

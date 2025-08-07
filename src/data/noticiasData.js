@@ -5,7 +5,7 @@ export const noticiasData = [
     id: 1,
     titulo: "Ruralidad, fe y justicia: voces de esperanza desde el corazón del campo colombiano",
     descripcion: "Promovemos la agricultura sostenible y el desarrollo económico en comunidades rurales, fortaleciendo la fe y la justicia social en el campo colombiano.",
-    contenido: "En el marco de nuestro compromiso con el desarrollo rural integral, hemos iniciado un ambicioso proyecto que busca fortalecer las comunidades campesinas colombianas. Este programa integra aspectos de agricultura sostenible, justicia social y fortalecimiento de la fe comunitaria. A través de talleres de capacitación técnica, apoyo espiritual y promoción de los derechos humanos, estamos trabajando de la mano con más de 200 familias rurales en diferentes regiones del país. Los resultados han sido alentadores: incremento del 40% en la productividad agrícola, fortalecimiento de las organizaciones comunitarias y renovación de la esperanza en territorios que han sido históricamente marginados.",
+    contenido: "En el marco de nuestro compromiso con el desarrollo rural integral, hemos iniciado un ambicioso proyecto que busca fortalecer las comunidades campesinas colombianas.\n\n## Un Programa Integral\n\nEste programa integra aspectos de agricultura sostenible, justicia social y fortalecimiento de la fe comunitaria. A través de talleres de capacitación técnica, apoyo espiritual y promoción de los derechos humanos, estamos trabajando de la mano con más de 200 familias rurales en diferentes regiones del país.\n\n### Resultados Destacados\n\nLos resultados han sido alentadores:\n\n- Incremento del 40% en la productividad agrícola\n- Fortalecimiento de las organizaciones comunitarias\n- Renovación de la esperanza en territorios marginados\n- Implementación de 50 proyectos productivos\n\n> \"Este programa nos ha devuelto la esperanza y nos ha enseñado que podemos ser protagonistas de nuestro propio desarrollo\"\n\n**Impacto transformador:** El programa ha demostrado que con el apoyo adecuado, las comunidades rurales pueden superar décadas de exclusión y construir un futuro próspero.",
     imagen: "/src/assets/banner1.jpg",
     fecha: "2024-01-15",
     autor: "Fundación Cáritas Colombia",
@@ -116,10 +116,6 @@ export const getNoticiasByCategoria = (categoria) => {
   return noticiasData.filter(noticia => noticia.categoria === categoria);
 };
 
-export const getNoticiaById = (id) => {
-  return noticiasData.find(noticia => noticia.id === parseInt(id));
-};
-
 export const getCategorias = () => {
   const categorias = [...new Set(noticiasData.map(noticia => noticia.categoria))];
   return categorias;
@@ -139,4 +135,23 @@ export const searchNoticias = (termino) => {
     noticia.contenido.toLowerCase().includes(terminoLower) ||
     noticia.tags.some(tag => tag.toLowerCase().includes(terminoLower))
   );
+};
+
+// Función para obtener una noticia por ID
+export const getNoticiaById = (id) => {
+  return noticiasData.find(noticia => noticia.id === parseInt(id));
+};
+
+// Función para obtener noticias relacionadas (misma categoría, excluyendo la actual)
+export const getNoticiasRelacionadas = (noticiaId, limite = 3) => {
+  const noticiaActual = getNoticiaById(noticiaId);
+  if (!noticiaActual) return [];
+  
+  return noticiasData
+    .filter(noticia => 
+      noticia.id !== parseInt(noticiaId) && 
+      noticia.categoria === noticiaActual.categoria
+    )
+    .sort((a, b) => new Date(b.fecha) - new Date(a.fecha))
+    .slice(0, limite);
 };
