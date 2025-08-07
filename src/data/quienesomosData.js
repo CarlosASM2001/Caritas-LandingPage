@@ -12,7 +12,7 @@ export const misionVisionData = [
     id: 1,
     titulo: "Misión",
     descripcion:
-      "Aportar al desarrollo humano, sostenible y solidario, sirviendo a la sociedad en la formación de comunidades capaces de enfrentar y transformar su realidad social.",
+      "Promover acciones a la luz del evangelio y la Doctrina Social de la Iglesia, que permitan a los mas pobres y excluidos ejercer plenamente su derecho a la vida digna",
     contenido:
       "Nuestra misión está inspirada en el Evangelio y la Doctrina Social de la Iglesia. Trabajamos en zonas de alta vulnerabilidad promoviendo valores cristianos, acompañamiento comunitario, y procesos de transformación social desde la fe.",
     icono: "/src/assets/mision.png",
@@ -22,7 +22,7 @@ export const misionVisionData = [
     id: 2,
     titulo: "Visión",
     descripcion:
-      "Animar y fortalecer los procesos de evangelización de lo social, incidiendo en la transformación de la sociedad y en el desarrollo integral de la persona humana.",
+      "Anhelamos una Venezuela justa y fraterna constituida por hombres y mujeres reconciliados, con dignidad y derechos, libres, solidarios y protagonistas de su historia como hijos e hijas de dios",
     contenido:
       "Buscamos ser un referente en el desarrollo integral, con comunidades fortalecidas en su espiritualidad, organizadas y comprometidas con la justicia y la solidaridad.",
     icono: "/src/assets/vision.png",

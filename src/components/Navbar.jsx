@@ -29,13 +29,13 @@ function Navbar() {
                 </ul>
                 <div className="hidden lg:flex justify-center space-x-5 items-center ml-12">
                     <a 
-                        href="https://www.facebook.com/CaritasSanCristobal" 
+                        href="https://www.facebook.com/caritassancristoball/" 
                         target="_blank" rel="noopener noreferrer" 
                         className="text-red-900 hover:text-black">
                         <Facebook className="w-5 h-5" />
                     </a>
                     <a 
-                        href="https://www.instagram.com/caritas_sancristobal/" 
+                        href="https://www.instagram.com/caritassancristobal/" 
                         target="_blank" rel="noopener noreferrer" 
                         className="text-red-900 hover:text-black">
                         <Instagram className="w-5 h-5" />
