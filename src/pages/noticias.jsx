@@ -10,36 +10,61 @@ import {
   searchNoticias,
   getNoticiasRecientes 
 } from '../data/noticiasData.js';
+import { getNoticiasConFallback } from '../services/cmsSimple.js';
 
 const Noticias = () => {
+  const [allNoticias, setAllNoticias] = useState(noticiasData); // Todas las noticias (CMS + estáticas)
   const [filteredNoticias, setFilteredNoticias] = useState(noticiasData);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Todas');
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [isLoadingCMS, setIsLoadingCMS] = useState(true);
   const noticiasPerPage = 6;
 
-  const categorias = ['Todas', ...getCategorias()];
-
-  // Filtro y buscar
+  // Cargar noticias del CMS al inicio
   useEffect(() => {
-    let result = noticiasData;
+    const loadNoticias = async () => {
+      setIsLoadingCMS(true);
+      try {
+        const noticias = await getNoticiasConFallback(noticiasData);
+        setAllNoticias(noticias);
+      } catch (error) {
+        console.error('Error cargando noticias:', error);
+        setAllNoticias(noticiasData); // Usar datos estáticos como fallback
+      } finally {
+        setIsLoadingCMS(false);
+      }
+    };
+
+    loadNoticias();
+  }, []);
+
+  // Obtener categorías dinámicamente de todas las noticias
+  const categorias = ['Todas', ...new Set(allNoticias.map(n => n.categoria).filter(Boolean))];
+
+  // Filtro y búsqueda actualizado para usar allNoticias
+  useEffect(() => {
+    let result = allNoticias;
 
     // filtro por categoria
     if (selectedCategory !== 'Todas') {
-      result = getNoticiasByCategoria(selectedCategory);
+      result = result.filter(noticia => noticia.categoria === selectedCategory);
     }
 
     // buscar filtro
     if (searchTerm) {
-      result = searchNoticias(searchTerm).filter(noticia => 
-        selectedCategory === 'Todas' || noticia.categoria === selectedCategory
+      const searchLower = searchTerm.toLowerCase();
+      result = result.filter(noticia => 
+        (noticia.titulo?.toLowerCase().includes(searchLower) ||
+         noticia.contenido?.toLowerCase().includes(searchLower)) &&
+        (selectedCategory === 'Todas' || noticia.categoria === selectedCategory)
       );
     }
 
     setFilteredNoticias(result);
     setCurrentPage(1); // Reset
-  }, [searchTerm, selectedCategory]);
+  }, [searchTerm, selectedCategory, allNoticias]);
 
   // Pagination logic
   const indexOfLastNoticia = currentPage * noticiasPerPage;
@@ -81,11 +106,21 @@ const Noticias = () => {
           <nav className="text-white/80 text-sm mb-4">
             <span>Home</span> <span className="mx-2">/</span> <span className="text-white">Noticias</span>
           </nav>
-          <h1 className="text-5xl font-bold text-white mb-6">Noticias</h1>
+          <h1 className="text-5xl font-bold text-white mb-6">
+            Noticias
+            {isLoadingCMS && (
+              <span className="ml-4 inline-block w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+            )}
+          </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Mantente informado sobre nuestros proyectos, logros y las historias que están 
             transformando vidas en las comunidades colombianas.
           </p>
+          {!isLoadingCMS && allNoticias !== noticiasData && (
+            <p className="text-sm text-white/70 mt-2">
+              ✨ Contenido actualizado desde el sistema de gestión
+            </p>
+          )}
         </div>
       </section>
 
