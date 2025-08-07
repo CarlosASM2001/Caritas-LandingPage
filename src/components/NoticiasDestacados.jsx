@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Calendar, ArrowRight } from 'lucide-react';
 import { getNoticiasDestacadas } from '../data/noticiasData.js';
 
@@ -136,13 +137,13 @@ const NoticiasDestacados = () => {
                         {noticia.descripcion}
                       </p>
                       
-                      <a
-                        href={noticia.link}
+                      <Link
+                        to={`/noticias/${noticia.id}`}
                         className="inline-flex items-center text-red-800 hover:text-red-900 font-semibold group/link"
                       >
                         Leer más
                         <ArrowRight className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-200" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -172,13 +173,13 @@ const NoticiasDestacados = () => {
 
         {/* Boton  */}
         <div className="text-center mt-12">
-          <a
-            href="/noticias"
+          <Link
+            to="/noticias"
             className="inline-flex items-center bg-red-800 hover:bg-red-900 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 group"
           >
             Ver todas las noticias
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
