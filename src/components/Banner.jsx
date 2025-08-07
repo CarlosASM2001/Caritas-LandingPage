@@ -10,8 +10,11 @@ function Banner() {
       }}
     >
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl font-bold">Welcome to Caritas San Cristobal</h1>
-        <p className="m-2 text-2xl ">Join us in making a difference in our community.</p>
+        <h1 className="text-4xl font-bold">Caritas San Cristobal</h1>
+        <p className="m-2 text-2xl ">
+          Somos la organización de promoción y asistencia de la Iglesia Católica que fomenta la 
+          caridad y está al servicio de los más pobres y sus comunidades cristianas.
+        </p>
         <button href="#dona" className="bg-gradient-to-r from-red-800 to-red-900
           py-2 px-3 rounded-md text-white m-5">Dona Aqui
         </button>

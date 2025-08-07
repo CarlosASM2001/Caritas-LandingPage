@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, User, Tag, Search, Filter, ChevronDown, ArrowRight } from 'lucide-react';
 import PiePagina from "../components/piePagina.jsx";
 import Navbar from '../components/Navbar.jsx';
@@ -79,12 +80,14 @@ const Noticias = () => {
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative container mx-auto px-4 text-center">
           <nav className="text-white/80 text-sm mb-4">
-            <span>Home</span> <span className="mx-2">/</span> <span className="text-white">Noticias</span>
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <span className="mx-2">/</span> 
+            <span className="text-white">Noticias</span>
           </nav>
           <h1 className="text-5xl font-bold text-white mb-6">Noticias</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Mantente informado sobre nuestros proyectos, logros y las historias que están 
-            transformando vidas en las comunidades colombianas.
+            transformando vidas en las comunidades tachirenses.
           </p>
         </div>
       </section>
@@ -212,13 +215,13 @@ const Noticias = () => {
                       ))}
                     </div>
                     
-                    <a
-                      href={noticia.link}
+                    <Link
+                      to={`/noticias/${noticia.id}`}
                       className="inline-flex items-center text-red-800 hover:text-red-900 font-semibold group/link"
                     >
                       Leer más
                       <ArrowRight className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-200" />
-                    </a>
+                    </Link>
                   </div>
                 </article>
               ))}

@@ -36,22 +36,15 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3">Contacto</h4>
             <ul className="space-y-2">
-              <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-1" /> Dirección: Cra 58 # 80-87</li>
-              <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-1" /> 01 8000 160 100</li>
-              <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-1" /> escuchamostuopinion@cec.org.co</li>
-              <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 mt-1" /> habeasdatasnps@cec.org.co</li>
+              <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-1" /> Calle 5 entre carreras 3 y 4, casa Nro 3-20.</li>
+              <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-1" />+58 276-3447809</li>
+              <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-1" />edascaritas.sancristobal@gmail.com</li>
             </ul>
           </div>
         </div>
 
         {/* Pie final */}
         <div className="border-t border-white/30 py-4 text-center text-xs">
-          <p>© Copyright 2022 por <a href="https://evolutecc.com" className="font-bold hover:underline">Evolutecc.com</a>
-          </p>
-          <p className="mt-1">
-            <a href="#" className="hover:underline mr-4">Política de privacidad</a>
-            <a href="#" className="hover:underline">Términos de condiciones</a>
-          </p>
         </div>
       </div>
     </footer>
