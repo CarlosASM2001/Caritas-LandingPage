@@ -72,7 +72,7 @@ Este caso es un claro ejemplo de cómo **Cáritas**, brazo social de la Iglesia 
     
     `,
     imagen: noticia_14_08_2025,
-    fecha: "2024-08-14",
+    fecha: "2025-08-14",
     autor: "Fundacion Caritas San Cristobal",
     categoria: "Accion Social",
     tags: ["Ayuda", "Solidaridad", "Projimo"],
