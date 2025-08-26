@@ -101,7 +101,7 @@ const NoticiaDetalle = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5" />
-                  <span>{estimateReadingTime(noticia.contenido)} min de lectura</span>
+                  <span>{estimateReadingTime(noticia.contenidoMarkdown)} min de lectura</span>
                 </div>
               </div>
             </div>
@@ -163,7 +163,7 @@ const NoticiaDetalle = () => {
                   )
                 }}
               >
-                {noticia.contenidoMarkdown || noticia.contenido}
+                {noticia.contenidoMarkdown}
               </ReactMarkdown>
             </div>
 
