@@ -60,28 +60,10 @@ const NoticiaDetalle = () => {
         </div>
         
         <div className="absolute inset-0 flex items-end">
-          <div className="container mx-auto px-4 pb-16">
+          <div className="container mx-auto px-4 pb-5">
             {/* Breadcrumb */}
-            <nav className="text-white/80 text-sm mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <span className="mx-2">/</span>
-              <Link to="/noticias" className="hover:text-white transition-colors">Noticias</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Artículo</span>
-            </nav>
-            
-            <div className="max-w-4xl">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="bg-red-800 text-white px-4 py-2 rounded-full text-sm font-medium">
-                  {noticia.categoria}
-                </span>
-                {noticia.destacado && (
-                  <span className="bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-medium">
-                    Destacado
-                  </span>
-                )}
-              </div>
-              
+          
+            <div className="max-w-4xl">        
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                 {noticia.titulo}
               </h1>
