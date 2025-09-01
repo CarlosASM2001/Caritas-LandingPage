@@ -15,7 +15,7 @@ function CampaignHighlight({
         <img
           src={imageSrc}
           alt={title}
-          className="relative rounded-2xl shadow-xl object-cover w-full h-72 lg:h-96"
+          className="relative rounded-2xl shadow-xl object-cover w-full h-100 lg:h-115"
           loading="lazy"
         />
       </div>
