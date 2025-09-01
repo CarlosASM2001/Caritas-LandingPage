@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {Menu, X} from 'lucide-react';
-import logo from "../assets/logo-navbar.png";
+import logo from "../assets/caritas_sc.png";
 import { Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -16,9 +16,9 @@ function Navbar() {
     <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg py-3 border-b border-gray-200/50 shadow-lg">
         <div className="container px-4 mx-auto relative text-[14px]">
             <div className="flex justify-between items-center">
-                <div className="flex items-center flex-shrink-0">
-                    <img src={logo} alt="Caritas Logo" className="h-10 w-10 mr-2" />
-                    <span className="text-xl tracking-tight">Caritas San Cristobal</span>
+                <div className="flex items-center ">
+                    <img src={logo} alt="Caritas Logo" className="h-15 w-35" />
+                    
                 </div>
                 <ul className="hidden lg:flex ml-auto space-x-12">
                     <li><Link to="/" className="text-black-300 hover:text-black">Inicio</Link></li>

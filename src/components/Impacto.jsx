@@ -16,7 +16,7 @@ function Impacto() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <MetricCard title="Comunidades Beneficiadas" value="+50" />
-          <MetricCard title="Personas Atendidas" value="+200" />
+          <MetricCard title="Personas Atendidas en consultas medicas" value="+200" />
           <MetricCard title="Proyectos Implementados" value="+15" />
         </div>
       </div>
