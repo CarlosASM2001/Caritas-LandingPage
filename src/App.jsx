@@ -7,6 +7,7 @@ import AcercaNosotros from './components/AcercaNosotros.jsx'
 import Impacto from './components/Impacto.jsx'
 import MapaFundacion from './components/MapaFundacion.jsx'
 import DonationCTA from './components/DonacionCTA.jsx'
+import CampanasDestacadas from './components/CampanasDestacadas.jsx'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Banner />
       <AcercaNosotros />
+      <CampanasDestacadas />
       <NoticiasDestacados />
       <Impacto />
       <MapaFundacion />
