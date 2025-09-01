@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar.jsx'
 import Banner from './components/Banner.jsx'
 import NoticiasDestacados from './components/NoticiasDestacados.jsx'
+import CampanasHome from './components/CampanasHome.jsx'
 import PiePagina  from './components/piePagina.jsx'
 import AcercaNosotros from './components/AcercaNosotros.jsx'
 import Impacto from './components/Impacto.jsx'
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Banner />
       <AcercaNosotros />
+      <CampanasHome />
       <NoticiasDestacados />
       <Impacto />
       <MapaFundacion />
