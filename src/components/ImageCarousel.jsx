@@ -33,8 +33,8 @@ function ImageCarousel({ images = [], altPrefix = 'imagen', autoPlay = true, int
   };
 
   return (
-    <div className="relative w-full">
-      <div className="relative overflow-hidden rounded-2xl shadow-lg">
+    <div className="relative">
+      <div className="overflow-hidden rounded-xl">
         <img
           src={safeImages[currentIndex]}
           alt={`${altPrefix} ${currentIndex + 1}`}
@@ -63,7 +63,7 @@ function ImageCarousel({ images = [], altPrefix = 'imagen', autoPlay = true, int
       </div>
       <div>
         {safeImages.length > 1 && (
-          <div className="flex justify-center m-4 space-x-2">
+          <div className="absolute inset-x-0 bottom-3 flex justify-center space-x-2">
             {safeImages.map((_, index) => (
               <button
                 key={`dot-${index}`}
