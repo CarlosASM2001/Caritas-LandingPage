@@ -61,26 +61,28 @@ function ImageCarousel({ images = [], altPrefix = 'imagen', autoPlay = true, int
           </>
         )}
       </div>
-
-      {safeImages.length > 1 && (
-        <div className="flex justify-center mt-4 space-x-2">
-          {safeImages.map((_, index) => (
-            <button
-              key={`dot-${index}`}
-              onClick={() => {
-                setIsAutoPlaying(false);
-                setCurrentIndex(index);
-                setTimeout(() => setIsAutoPlaying(autoPlay), 4000);
-              }}
-              className={`h-2 rounded-full transition-all ${
-                index === currentIndex ? 'bg-red-800 w-8' : 'bg-gray-300 w-2 hover:bg-gray-400'
-              }`}
-              aria-label={`Ver imagen ${index + 1}`}
-            />)
-          )}
-        </div>
-      )}
+      <div>
+        {safeImages.length > 1 && (
+          <div className="flex justify-center m-4 space-x-2">
+            {safeImages.map((_, index) => (
+              <button
+                key={`dot-${index}`}
+                onClick={() => {
+                  setIsAutoPlaying(false);
+                  setCurrentIndex(index);
+                  setTimeout(() => setIsAutoPlaying(autoPlay), 4000);
+                }}
+                className={`h-2 rounded-full transition-all ${
+                  index === currentIndex ? 'bg-red-800 w-8' : 'bg-gray-300 w-2 hover:bg-gray-400'
+                }`}
+                aria-label={`Ver imagen ${index + 1}`}
+              />)
+            )}
+          </div>
+        )}
+      </div>
     </div>
+    
   );
 }
 
