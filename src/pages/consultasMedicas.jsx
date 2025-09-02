@@ -33,6 +33,22 @@ export default function ConsultasMedicasPage() {
                 Gracias a profesionales voluntarios y donantes, acercamos evaluaciones, orientación
                 y entrega de tratamientos esenciales.
               </p>
+              <div className="mt-8">
+                <h2 className="text-2xl font-bold text-[#032b27] mb-3">Especialidades disponibles:</h2>
+                <ul className="list-disc list-inside mb-4">
+                  <li>Pediatría</li>
+                  <li>Dermatología</li>
+                  <li>Psicología</li>
+                  <li>Medicina Familiar</li>
+                  <li>Medicina Interna</li>
+                </ul>
+                <p>
+                  Las consultas son totalmente gratuitas y deben agendarse previamente por nuestro WhatsApp Institucional <span className="font-semibold text-red-800">+58 276-3447809</span>. Cuando haya disponibilidad del médico, se les informa la fecha y hora para evitar esperas innecesarias.
+                </p>
+                <p className="mt-4">
+                  Además, contamos con un pequeño banco de medicinas. Si el médico le receta algún medicamento y lo tenemos disponible, se lo donamos mostrando el respectivo récipe.
+                </p>
+              </div>
             </div>
           </div>
 
