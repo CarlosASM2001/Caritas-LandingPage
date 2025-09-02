@@ -12,7 +12,7 @@ export const misionVisionData = [
     id: 1,
     titulo: "Misión",
     descripcion:
-      "Promover acciones a la luz del evangelio y la Doctrina Social de la Iglesia, que permitan a los mas pobres y excluidos ejercer plenamente su derecho a la vida digna",
+      "Promover acciones a la luz del evangelio y la Doctrina Social de la Iglesia, que permitan a los más pobres y excluidos ejercer plenamente su derecho a la vida digna, fortaleciendo sus capacidades, aumentando su capital humano, físico y social, y haciéndole partícipe en el desarrollo de la civilización del Amor en Venezuela.",
     contenido:
       "Nuestra misión está inspirada en el Evangelio y la Doctrina Social de la Iglesia. Trabajamos en zonas de alta vulnerabilidad promoviendo valores cristianos, acompañamiento comunitario, y procesos de transformación social desde la fe.",
     icono: "/src/assets/mision.png",
@@ -22,7 +22,7 @@ export const misionVisionData = [
     id: 2,
     titulo: "Visión",
     descripcion:
-      "Anhelamos una Venezuela justa y fraterna constituida por hombres y mujeres reconciliados, con dignidad y derechos, libres, solidarios y protagonistas de su historia como hijos e hijas de dios",
+      "Desde nuestro compromiso cristiano, especialmente con la vida de los pobres y excluidos a través de la comunión y solidaridad interdiocesana, anhelamos una Venezuela justa y fraterna constituida por hombres y mujeres reconciliados, con dignidad y derechos, libres, solidarios y protagonistas de su historia como hijos e hijas de Dios.",
     contenido:
       "Buscamos ser un referente en el desarrollo integral, con comunidades fortalecidas en su espiritualidad, organizadas y comprometidas con la justicia y la solidaridad.",
     icono: "/src/assets/vision.png",
@@ -73,6 +73,12 @@ export const principiosData = [
     id: 3,
     titulo: "Solidaridad",
     descripcion: "Nos unimos a quienes más sufren, acompañándolos en su proceso de vida con empatía, respeto y compromiso. Promovemos relaciones de apoyo mutuo, fortaleciendo la fraternidad y construyendo una sociedad más justa y humana.",
+    imagen: "/src/assets/banner4.jpg"
+  },
+  {
+    id: 4,
+    titulo: "Dignidad de la Persona",
+    descripcion: "El Caritas se cree que en la persona humana Dios Ha impreso su imagen y semejanza (cf. Gn 1, 26), confiriéndole una dignidad incomparable, En efecto, aparte de los derechos que el hombre adquiere con su propio trabajo, hay otros derechos que no proceden de ninguna obra realizada por él, sino de su dignidad esencial de persona. Este Principio le compromete a trabajar de manera preferencial por los mas pobres y excluidos en la protección y exigibilidad de sus derechos fundamentales.",
     imagen: "/src/assets/banner4.jpg"
   }
 ];

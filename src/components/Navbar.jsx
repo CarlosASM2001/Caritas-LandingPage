@@ -3,6 +3,7 @@ import {Menu, X} from 'lucide-react';
 import logo from "../assets/caritas_sc.png";
 import { Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { siteConfig } from "../data/siteConfig";
 
 function Navbar() {
 
@@ -29,13 +30,13 @@ function Navbar() {
                 </ul>
                 <div className="hidden lg:flex justify-center space-x-5 items-center ml-12">
                     <a 
-                        href="https://www.facebook.com/caritassancristoball/" 
+                        href={siteConfig.redes.facebook} 
                         target="_blank" rel="noopener noreferrer" 
                         className="text-red-900 hover:text-black">
                         <Facebook className="w-5 h-5" />
                     </a>
                     <a 
-                        href="https://www.instagram.com/caritassancristobal/" 
+                        href={siteConfig.redes.instagram}
                         target="_blank" rel="noopener noreferrer" 
                         className="text-red-900 hover:text-black">
                         <Instagram className="w-5 h-5" />
