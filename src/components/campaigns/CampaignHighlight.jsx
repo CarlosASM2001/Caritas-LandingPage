@@ -21,7 +21,6 @@ function CampaignHighlight({
       </div>
 
       <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-10 -mt-10 lg:mt-0">
-        <p className="tracking-[0.35em] text-gray-600 font-semibold mb-2">CAMPANA</p>
         <h3 className="text-3xl lg:text-4xl font-extrabold text-[#032b27] mb-4">{title}</h3>
         <p className="text-gray-600 leading-7 mb-6">{description}</p>
         <Link to={to} className="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-xl">
