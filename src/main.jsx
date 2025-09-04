@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App.jsx';
 import QuienesSomos from './pages/quienesSomos.jsx';
+import Contacto from './pages/contacto.jsx';
 import Noticias from './pages/noticias.jsx';
 import NoticiaDetalle from './pages/noticiaDetalle.jsx';
 import SamanPage from './pages/saman.jsx';
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/noticias/:id" element={<NoticiaDetalle />} />
         <Route path="/campanas/saman" element={<SamanPage />} />
         <Route path="/campanas/consultas-medicas" element={<ConsultasMedicasPage />} />
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

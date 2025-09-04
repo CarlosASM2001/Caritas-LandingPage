@@ -3,6 +3,7 @@ import {Menu, X} from 'lucide-react';
 import logo from "../assets/caritas_sc.png";
 import { Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { siteConfig } from "../data/siteConfig";
 
 function Navbar() {
 
@@ -24,18 +25,19 @@ function Navbar() {
                     <li><Link to="/" className="text-black-300 hover:text-black">Inicio</Link></li>
                     <li><Link to="/quienes-somos" className="text-black-300 hover:text-black">Quienes Somos</Link></li>
                     <li><Link to="/noticias" className="text-black-300 hover:text-black">Noticias</Link></li>
-                    <li><a href="#contacto" className="text-black-300 hover:text-black">Contacto</a></li>
+                    <li><Link to="/contacto" className="text-black-300 hover:text-black">Contactanos</Link></li>
+                    
                     
                 </ul>
                 <div className="hidden lg:flex justify-center space-x-5 items-center ml-12">
                     <a 
-                        href="https://www.facebook.com/caritassancristoball/" 
+                        href={siteConfig.redes.facebook} 
                         target="_blank" rel="noopener noreferrer" 
                         className="text-red-900 hover:text-black">
                         <Facebook className="w-5 h-5" />
                     </a>
                     <a 
-                        href="https://www.instagram.com/caritassancristobal/" 
+                        href={siteConfig.redes.instagram}
                         target="_blank" rel="noopener noreferrer" 
                         className="text-red-900 hover:text-black">
                         <Instagram className="w-5 h-5" />
@@ -55,7 +57,7 @@ function Navbar() {
                         <li><Link to="/" className="text-black-300 hover:text-black">Inicio</Link></li>
                         <li><Link to="/quienes-somos" className="text-black-300 hover:text-black">Quienes Somos</Link></li>
                         <li><Link to="/noticias" className="text-black-300 hover:text-black">Noticias</Link></li>
-                        <li><a href="#contacto" className="text-black-300 hover:text-black">Contacto</a></li>
+                        <li><Link to="/contacto" className="text-black-300 hover:text-black">Contacto</Link></li>
                         <li><a href="#dona" className="bg-gradient-to-r from-red-800 to-red-900
                         py-2 px-3 rounded-md text-white">Dona Aqui</a></li>
                     </ul>
