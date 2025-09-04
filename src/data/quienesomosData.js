@@ -9,6 +9,7 @@ export const introduccion = {
 
 export const misionVisionData = [
   {
+    
     id: 1,
     titulo: "Misión",
     descripcion:
