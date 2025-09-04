@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Heart, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 function Banner() {
   return (
@@ -18,12 +19,22 @@ function Banner() {
       
       {/* Content */}
       <div className="relative container mx-auto px-4 text-center z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+        <motion.h1
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight"
+        >
           Bienvenido a Cáritas San Cristóbal
-        </h1>
-        <p className="text-xl md:text-2xl lg:text-3xl mb-8 max-w-4xl mx-auto leading-relaxed">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className="text-xl md:text-2xl lg:text-3xl mb-8 max-w-4xl mx-auto leading-relaxed"
+        >
           Somos la organización de promoción y asistencia de la Iglesia Católica que fomenta la caridad y está al servicio de los más pobres y sus comunidades cristianas.
-        </p>
+        </motion.p>
         
         {/* Enhanced Donation Button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

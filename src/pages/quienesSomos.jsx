@@ -173,12 +173,7 @@ const handleNextDirectivo = () => {
 
       {/* Introducción */}
       <div className="bg-[#fff5f5] text-[#2b2b2b] font-sans px-6 lg:px-32 py-16">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="flex flex-col lg:flex-row items-center gap-8 mb-12"
-        >
+        <div className="flex flex-col lg:flex-row items-center gap-8 mb-12">
           <img
             src={introduccion.imagen}
             alt="Caritas"
@@ -192,20 +187,14 @@ const handleNextDirectivo = () => {
               {introduccion.parrafo}
             </p>
           </div>
-        </motion.div>
+        </div>
 
         {/* Misión y Visión */}
         <section className="relative py-16 bg-[#fff5f5]">
           <div className="absolute inset-0 bg-red-900 opacity-20 rounded-xl mx-4 lg:mx-24" />
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 px-4 lg:px-35">
             {misionVisionData.map((item) => (
-              <motion.div
-                key={item.id}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-                className="bg-white rounded-2xl shadow-lg p-10 text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
-              >
+              <div className="bg-white rounded-2xl shadow-lg p-10 text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div className="mb-4 flex justify-center">
                   <img src={item.icono} alt={item.titulo} className="h-16" />
                 </div>
@@ -213,7 +202,7 @@ const handleNextDirectivo = () => {
                   {item.titulo}
                 </h3>
                 <p className="text-gray-700 text-md">{item.descripcion}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </section>
@@ -231,13 +220,7 @@ const handleNextDirectivo = () => {
           >
             <ChevronLeft />
           </button>
-          <motion.div
-            key={currentPrincipioIndex}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-white rounded-2xl shadow-lg p-8 flex flex-col lg:flex-row items-center gap-6 max-w-4xl"
-          >
+          <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col lg:flex-row items-center gap-6 max-w-4xl">
             <img
               src={principiosData[currentPrincipioIndex].imagen}
               alt={principiosData[currentPrincipioIndex].titulo}
@@ -251,7 +234,7 @@ const handleNextDirectivo = () => {
                 {principiosData[currentPrincipioIndex].descripcion}
               </p>
             </div>
-          </motion.div>
+          </div>
           <button
             onClick={handleNextPrincipio}
             className="p-2 rounded-full border border-red-800 text-red-800 hover:bg-red-100 hover:scale-110 transition"
@@ -273,13 +256,7 @@ const handleNextDirectivo = () => {
           >
             <ChevronLeft />
           </button>
-          <motion.div
-            key={currentValorIndex}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="border border-red-300 p-8 rounded-2xl max-w-lg min-h-[400px] flex flex-col justify-between shadow-md hover:shadow-2xl"
-          >
+          <div className="border border-red-300 p-8 rounded-2xl max-w-lg min-h-[400px] flex flex-col justify-between shadow-md hover:shadow-2xl">
             <div>
               <div className="mb-4 flex justify-center">
                 <img
@@ -295,7 +272,7 @@ const handleNextDirectivo = () => {
                 {valoresData[currentValorIndex].descripcion}
               </p>
             </div>
-          </motion.div>
+          </div>
           <button
             onClick={handleNextValor}
             className="p-2 rounded-full border border-red-800 text-red-800 hover:bg-red-100 hover:scale-110 transition"

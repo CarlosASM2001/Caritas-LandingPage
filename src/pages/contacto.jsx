@@ -31,23 +31,13 @@ export default function Contacto() {
       {/* Canales de comunicación */}
       <section className="py-16 bg-white text-[#2b2b2b]">
         <div className="container mx-auto px-6 lg:px-20 text-center mb-12">
-          <motion.h2
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="text-3xl font-bold text-red-800 mb-4"
-          >
+          <h2 className="text-3xl font-bold text-red-800 mb-4">
             Canales de comunicación
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="text-gray-700 max-w-2xl mx-auto"
-          >
+          </h2>
+          <p className="text-gray-700 max-w-2xl mx-auto">
             Estamos aquí para ti. En esta sección encontrarás toda la información que necesitas para comunicarte con nosotros. 
             Ponemos a tu disposición canales de comunicación para que puedas contactarnos de manera fácil y rápida.
-          </motion.p>
+          </p>
         </div>
 
         <div className="container mx-auto px-6 lg:px-32 grid gap-8 md:grid-cols-3 text-left">
