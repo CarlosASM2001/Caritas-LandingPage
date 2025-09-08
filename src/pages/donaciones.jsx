@@ -17,12 +17,12 @@ import medicinas from "../assets/medicinas.jpg";
 import kidHigiene from "../assets/kidHigiene.jpg";
 
 export default function Donaciones() {
-
+ 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-
+ 
   const donacionesData = [
     {
       titulo: "Alimentos",
@@ -74,7 +74,7 @@ export default function Donaciones() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-
+ 
   useEffect(() => {
     if (isAutoPlaying) {
       const interval = setInterval(() => {

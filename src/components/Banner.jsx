@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Heart, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
+
 function Banner() {
   return (
     <div className="relative m-3 py-40 px-4 sm:px-6 lg:px-8 text-white rounded-2xl overflow-hidden">
@@ -36,36 +37,38 @@ function Banner() {
           Somos la organización de promoción y asistencia de la Iglesia Católica que fomenta la caridad y está al servicio de los más pobres y sus comunidades cristianas.
         </motion.p>
         
-        {/* Enhanced Donation Button */}
+        {/* Donation Button with Link */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link to="/donaciones" className="group relative bg-gradient-to-r from-red-600 via-red-700 to-red-800 
-            hover:from-red-700 hover:via-red-800 hover:to-red-900
-            text-white font-bold py-4 px-8 rounded-full text-lg
-            transform hover:scale-105 transition-all duration-300 ease-out
-            shadow-2xl hover:shadow-red-500/25
-            border-2 border-red-500/20 hover:border-red-400/30
-            overflow-hidden donation-button shimmer-effect">
-            
-            {/* Animated background effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent 
-              transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-            
-            {/* Button content */}
-            <div className="relative flex items-center gap-3">
-              <Heart className="w-6 h-6 group-hover:animate-pulse-heart animate-pulse" fill="currentColor" />
-              <span className="text-xl">Dona Aquí</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </div>
-            
-            {/* Glowing effect */}
-            <div className="absolute inset-0 rounded-full bg-red-400/20 blur-xl group-hover:bg-red-300/30 transition-colors duration-300"></div>
-          </Link>
+          <Link to="/donaciones">
+            <button className="group relative bg-gradient-to-r from-red-600 via-red-700 to-red-800 
+              hover:from-red-700 hover:via-red-800 hover:to-red-900
+              text-white font-bold py-4 px-8 rounded-full text-lg
+              transform hover:scale-105 transition-all duration-300 ease-out
+              shadow-2xl hover:shadow-red-500/25
+              border-2 border-red-500/20 hover:border-red-400/30
+              overflow-hidden donation-button shimmer-effect">
+              
+              {/* Animated background effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent 
+                transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              
+              {/* Button content */}
+              <div className="relative flex items-center gap-3">
+                <Heart className="w-6 h-6 group-hover:animate-pulse-heart animate-pulse" fill="currentColor" />
+                <span className="text-xl">Dona Aquí</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </div>
 
+              
+              {/* Glowing effect */}
+              <div className="absolute inset-0 rounded-full bg-red-400/20 blur-xl group-hover:bg-red-300/30 transition-colors duration-300"></div>
+            </button>
+          </Link>
         </div>
         
         {/* Call to action text */}
         <p className="text-white/80 text-sm mt-6 max-w-2xl mx-auto">
-          Tu donación ayuda a transformar vidas en las comunidades más necesitadas del Tachira
+          Tu donación ayuda a transformar vidas en las comunidades más necesitadas del Táchira
         </p>
       </div>
       

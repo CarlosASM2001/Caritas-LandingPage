@@ -9,7 +9,7 @@ import Noticias from './pages/noticias.jsx';
 import NoticiaDetalle from './pages/noticiaDetalle.jsx';
 import SamanPage from './pages/saman.jsx';
 import ConsultasMedicasPage from './pages/consultasMedicas.jsx';
-import Donaciones from './pages/donaciones.jsx'; 
+import Donaciones from './pages/donaciones.jsx'; // ✅ Importa la nueva página
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/campanas/saman" element={<SamanPage />} />
         <Route path="/campanas/consultas-medicas" element={<ConsultasMedicasPage />} />
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="/donaciones" element={<Donaciones />} />
+        <Route path="/donaciones" element={<Donaciones />} /> {/* ✅ Nueva ruta */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
