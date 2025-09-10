@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 function DonationCTA() {
   return (
@@ -11,9 +12,9 @@ function DonationCTA() {
           Tu contribución nos permite seguir transformando vidas y construyendo un futuro más justo para todos.
         </p>
         <div className="flex justify-center">
-          <button className="bg-red-800 hover:bg-red-900 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+          <Link to="/donaciones" className="bg-red-800 hover:bg-red-900 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
             Haz una Donación
-          </button>
+          </Link>
         </div>
       </div>
     </section>

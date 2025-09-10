@@ -87,44 +87,139 @@ export const principiosData = [
 export const directivosData = [
   {
     id: 1,
-    nombre: "Dr. Ricardo Corelli",
-    cargo: "Director Ejecutivo",
+    nombre: "Monseñor Lisandro Rivas Duran",
+    cargo: "Presidente",
     imagen: "/src/assets/directivo1.jpg"
   },
   {
     id: 2,
-    nombre: "Dra. Sofía Ramírez",
-    cargo: "Coordinadora de Proyectos",
+    nombre: "Monseñor Juan Alberto Ayala",
+    cargo: "Vice-Presidente",
     imagen: "/src/assets/directivo1.jpg"
   },
   {
     id: 3,
-    nombre: "Sr. Alejandro Vargas",
-    cargo: "Responsable de Comunicaciones",
+    nombre: "Andres Ricardo Ramirez Prato",
+    cargo: "Director Ejecutivo",
     imagen: "/src/assets/directivo1.jpg"
   },
 
   {
     id: 4,
-    nombre: "Sr. Carlos Serrano",
-    cargo: "Responsable de Redes",
+    nombre: "Elvis Ramirez",
+    cargo: "Gestion social",
     imagen: "/src/assets/directivo1.jpg"
   },
 
   {
     id: 5,
-    nombre: "Sr. Carlos Serrano",
-    cargo: "Responsable de Redes",
+    nombre: "Alissette Useche",
+    cargo: "Cordinadoras de relaciones institucionales",
     imagen: "/src/assets/directivo1.jpg"
   },
 
   {
     id: 6,
-    nombre: "Sr. Carlos Serrano",
-    cargo: "Responsable de Redes",
+    nombre: "Sarahi Briceño",
+    cargo: "Gestor Pastoral Juvenil",
     imagen: "/src/assets/directivo1.jpg"
-  }
+  },
+  {
+    id: 7,
+    nombre: "Franklin Ramirez",
+    cargo: "Conductor",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 8,
+    nombre: "Joclandy Azuaje",
+    cargo: "Psicologo",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 9,
+    nombre: "Ana Ilse Lizcano",
+    cargo: "Gestor de Evaluacion y Monitoreo",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 10,
+    nombre: "David A. Velasco Berbesi",
+    cargo: "Gestion de redes y contenido digital",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 11,
+    nombre: "John Jairo Neiva Largo",
+    cargo: "Gestion de participacion comunitaria",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 12,
+    nombre: "Iris Estrella Moreno",
+    cargo: "Cordinadora de proyectos",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 13,
+    nombre: "Nancy Zulay Parada Roso",
+    cargo: "Cordinadora de gestion social-salud",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 14,
+    nombre: "Sonia Yolanda Parada Roso",
+    cargo: "Gestion Social",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 15,
+    nombre: "Francisco Javier Nieto",
+    cargo: "Medico",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 16,
+    nombre: "Rachel Villamizar",
+    cargo: "Medico",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 17,
+    nombre: "Nakary Vanegas",
+    cargo: "Gestion de relaciones y logistica",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 18,
+    nombre: "Yvan Miguel Ponte Gonzalez",
+    cargo: "Cordinador de voluntariado",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 19,
+    nombre: "Randy David Acosta",
+    cargo: "Gestion de integracion y desarrollo",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 20,
+    nombre: "Gabby Marynes Osorio Moros",
+    cargo: "Gestion de integracion y desarrollo",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 21,
+    nombre: "Yumary Consolacion Parada",
+    cargo: "Gestion de integracion y desarrollo",
+    imagen: "/src/assets/directivo1.jpg"
+  },
+  {
+    id: 22,
+    nombre: "Laura Josefina Garcia de Araque",
+    cargo: "Gestion legal",
+    imagen: "/src/assets/directivo1.jpg"
+  },
 ];
-
 
 

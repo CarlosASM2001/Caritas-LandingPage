@@ -38,7 +38,7 @@ function Banner() {
         
         {/* Enhanced Donation Button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="group relative bg-gradient-to-r from-red-600 via-red-700 to-red-800 
+          <Link to="/donaciones" className="group relative bg-gradient-to-r from-red-600 via-red-700 to-red-800 
             hover:from-red-700 hover:via-red-800 hover:to-red-900
             text-white font-bold py-4 px-8 rounded-full text-lg
             transform hover:scale-105 transition-all duration-300 ease-out
@@ -59,7 +59,7 @@ function Banner() {
             
             {/* Glowing effect */}
             <div className="absolute inset-0 rounded-full bg-red-400/20 blur-xl group-hover:bg-red-300/30 transition-colors duration-300"></div>
-          </button>
+          </Link>
 
         </div>
         
