@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+ 
 import Navbar from "../components/Navbar.jsx";
 import PiePagina from "../components/piePagina.jsx";
 import { MapPin, Phone, Mail } from "lucide-react";
@@ -17,14 +17,11 @@ export default function Contacto() {
           <nav className="text-white/80 text-sm mb-4">
             <span>Home</span> <span className="mx-2">/</span> <span className="text-white">Contáctanos</span>
           </nav>
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+          <h1
             className="text-5xl font-extrabold tracking-wide text-white mb-6 drop-shadow-lg"
           >
             Contactános
-          </motion.h1>
+          </h1>
         </div>
       </section>
 
@@ -42,10 +39,7 @@ export default function Contacto() {
 
         <div className="container mx-auto px-6 lg:px-32 grid gap-8 md:grid-cols-3 text-left">
           {/* Dirección */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
             className="flex items-start gap-4 p-6 bg-[#fff5f5] rounded-xl shadow hover:shadow-lg transition"
           >
             <div className="bg-red-100 p-3 rounded-full">
@@ -57,13 +51,10 @@ export default function Contacto() {
                 {siteConfig.ubicacion}
               </p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Teléfono */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+          <div
             className="flex items-start gap-4 p-6 bg-[#fff5f5] rounded-xl shadow hover:shadow-lg transition"
           >
             <div className="bg-red-100 p-3 rounded-full">
@@ -73,13 +64,10 @@ export default function Contacto() {
               <h4 className="font-semibold text-red-800">Teléfono</h4>
               <p className="text-gray-700">{siteConfig.contacto.telefono}</p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Email */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+          <div
             className="flex items-start gap-4 p-6 bg-[#fff5f5] rounded-xl shadow hover:shadow-lg transition"
           >
             <div className="bg-red-100 p-3 rounded-full">
@@ -89,7 +77,7 @@ export default function Contacto() {
               <h4 className="font-semibold text-red-800">Email</h4>
               <p className="text-gray-700">{siteConfig.contacto.email}</p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 

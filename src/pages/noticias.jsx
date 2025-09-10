@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+ 
 import { Calendar, User, Tag, Search, Filter, ChevronDown, ArrowRight } from 'lucide-react';
 import PiePagina from "../components/piePagina.jsx";
 import Navbar from '../components/Navbar.jsx';
@@ -85,23 +85,17 @@ const Noticias = () => {
             <span className="mx-2">/</span> 
             <span className="text-white">Noticias</span>
           </nav>
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+          <h1
             className="text-5xl font-bold text-white mb-6"
           >
             Noticias
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
+          </h1>
+          <p
             className="text-xl text-white/90 max-w-3xl mx-auto"
           >
             Mantente informado sobre nuestros proyectos, logros y las historias que están 
             transformando vidas en las comunidades tachirenses.
-          </motion.p>
+          </p>
         </div>
       </section>
 

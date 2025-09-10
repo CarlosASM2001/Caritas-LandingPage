@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+ 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Navbar from "../components/Navbar.jsx";
 import PiePagina from "../components/piePagina.jsx";
@@ -114,40 +114,30 @@ export default function Donaciones() {
 
   {/* Contenido */}
   <div className="relative z-10 text-center text-white px-6">
-    <motion.h1
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+    <h1
       className="text-4xl md:text-6xl font-extrabold drop-shadow-lg"
     >
       Dona con Amor
-    </motion.h1>
-    <motion.p
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.5 }}
+    </h1>
+    <p
       className="mt-4 text-lg md:text-xl max-w-3xl mx-auto"
     >
       Tu aporte ayuda a transformar vidas. Cáritas está al servicio de quienes
       más lo necesitan.
-    </motion.p>
+    </p>
   </div>
 </section>
 
 
       {/* Sección de motivos */}
       <section className="bg-[#fff5f5] py-16 px-6 lg:px-32 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+        <h2
           className="text-3xl font-bold text-red-800 mb-8"
         >
           ¿Por qué donar?
-        </motion.h2>
+        </h2>
         <div className="grid md:grid-cols-3 gap-8">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
+          <div
             className="bg-white rounded-2xl shadow-lg p-8"
           >
             <h3 className="text-xl font-bold text-red-700 mb-3">Ayuda directa</h3>
@@ -155,10 +145,9 @@ export default function Donaciones() {
               Tus donaciones se transforman en alimentos, medicinas y refugio
               para quienes lo necesitan.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
+          <div
             className="bg-white rounded-2xl shadow-lg p-8"
           >
             <h3 className="text-xl font-bold text-red-700 mb-3">Impacto real</h3>
@@ -166,10 +155,9 @@ export default function Donaciones() {
               Cada aporte contribuye a programas comunitarios que mejoran la
               calidad de vida de cientos de familias.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
+          <div
             className="bg-white rounded-2xl shadow-lg p-8"
           >
             <h3 className="text-xl font-bold text-red-700 mb-3">
@@ -179,7 +167,7 @@ export default function Donaciones() {
               Siguiendo el llamado del Papa Francisco, llevamos la caricia de la
               Iglesia a los más vulnerables.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -191,14 +179,11 @@ export default function Donaciones() {
           className="rounded-2xl shadow-lg w-full lg:w-1/2 object-cover hover:scale-105 transition-transform duration-500"
         />
         <div className="lg:w-1/2 text-left">
-          <motion.h2
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+          <h2
             className="text-3xl font-bold text-red-800 mb-4"
           >
             Cada donación es esperanza
-          </motion.h2>
+          </h2>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
             Con tu ayuda, Cáritas puede llegar a más comunidades, brindar apoyo
             a familias en crisis, acompañar a los enfermos y alimentar a los que

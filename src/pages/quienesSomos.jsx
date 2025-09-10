@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+ 
 import Navbar from "../components/Navbar.jsx";
 import {
   introduccion,
@@ -160,14 +160,11 @@ const handleNextDirectivo = () => {
             <span>Home</span> <span className="mx-2">/</span>{" "}
             <span className="text-white">Quienes Somos</span>
           </nav>
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+          <h1
             className="text-5xl font-extrabold tracking-wide text-white mb-6 drop-shadow-lg"
           >
             Quienes Somos
-          </motion.h1>
+          </h1>
         </div>
       </section>
 
