@@ -9,6 +9,7 @@ import Noticias from './pages/noticias.jsx';
 import NoticiaDetalle from './pages/noticiaDetalle.jsx';
 import SamanPage from './pages/saman.jsx';
 import ConsultasMedicasPage from './pages/consultasMedicas.jsx';
+import EmergenciaHumanitariaPage from './pages/emergenciaHumanitaria.jsx';
 import Donaciones from './pages/donaciones.jsx'; 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/noticias/:id" element={<NoticiaDetalle />} />
         <Route path="/campanas/saman" element={<SamanPage />} />
         <Route path="/campanas/consultas-medicas" element={<ConsultasMedicasPage />} />
+        <Route path="/campanas/emergencia-humanitaria" element={<EmergenciaHumanitariaPage />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/donaciones" element={<Donaciones />} />
       </Routes>

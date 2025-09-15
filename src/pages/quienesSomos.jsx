@@ -10,7 +10,7 @@ import {
 } from "../data/quienesomosData";
 import PiePagina from "../components/piePagina.jsx";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import francisco from "../assets/francisco.jpg";
+
 
 export default function QuienesSomos() {
 const [currentPrincipioIndex, setCurrentPrincipioIndex] = useState(0);
@@ -279,27 +279,7 @@ const handleNextDirectivo = () => {
         </div>
       </section>
 
-      {/* Imagen con mensaje */}
-      <section
-        className="relative w-full h-[400px] flex items-center justify-center bg-fixed bg-center bg-cover"
-        style={{
-          backgroundImage: `url(${francisco})`, // ✅ usa la variable importada
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
-
-        {/* Texto */}
-        <div className="relative z-10 text-center px-6">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white drop-shadow-lg">
-            “Cáritas es la caricia de la Iglesia a su pueblo, la caricia de la
-            Madre Iglesia a sus hijos, la ternura y la cercanía.”
-          </h2>
-          <p className="text-lg md:text-xl text-gray-200 mt-4">
-            Papa Francisco
-          </p>
-        </div>
-      </section>
+      
 
        {/* Directivos */}
 <section className="w-full py-16 bg-[#fdecea] text-red-800 text-center px-4">

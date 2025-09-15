@@ -1,4 +1,5 @@
 import React from 'react'
+import francisco from "../assets/francisco.jpg";
 
 const MetricCard = ({ title, value }) => (
   <div className="bg-[#f1e8e5] rounded-xl p-6 shadow-sm text-center">
@@ -9,8 +10,32 @@ const MetricCard = ({ title, value }) => (
 
 function Impacto() {
   return (
-    <section className="py-10">
-      <div className="container mx-auto px-4">
+    <section >
+
+
+      {/* Imagen con mensaje */}
+      <section
+        className="relative w-full h-[300px] flex items-center justify-center bg-fixed bg-center bg-cover"
+        style={{
+          backgroundImage: `url(${francisco})`, // ✅ usa la variable importada
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        {/* Texto */}
+        <div className="relative z-10 text-center px-6">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white drop-shadow-lg">
+            “Cáritas es la caricia de la Iglesia a su pueblo, la caricia de la
+            Madre Iglesia a sus hijos, la ternura y la cercanía.”
+          </h2>
+          <p className="text-lg md:text-xl text-gray-200 mt-4">
+            Papa Francisco
+          </p>
+        </div>
+      </section>
+
+      <div className="container mx-auto px-4 py-10">
         <h2 className="text-3xl font-extrabold text-center text-[#2b1b1b] mb-6">
           Nuestros Logros
         </h2>
