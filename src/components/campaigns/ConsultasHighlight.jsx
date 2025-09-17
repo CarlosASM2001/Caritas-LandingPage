@@ -1,6 +1,6 @@
 import React from 'react';
 import CampaignHighlight from './CampaignHighlight.jsx';
-import logo from '../../assets/consultasmedicas/DSCN0248.jpg'
+import logo from '../../assets/consultasmedicas/DSCN0248.jpg';
 
 function ConsultasHighlight() {
   return (
@@ -15,4 +15,3 @@ function ConsultasHighlight() {
 }
 
 export default ConsultasHighlight;
-

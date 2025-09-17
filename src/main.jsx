@@ -9,11 +9,13 @@ import Noticias from './pages/noticias.jsx';
 import NoticiaDetalle from './pages/noticiaDetalle.jsx';
 import SamanPage from './pages/saman.jsx';
 import ConsultasMedicasPage from './pages/consultasMedicas.jsx';
-import Donaciones from './pages/donaciones.jsx'; // ✅ Importa la nueva página
+import Donaciones from './pages/donaciones.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx'; // ✅ Importa el componente
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop /> {/* 👈 Ahora el scroll se resetea al cambiar de ruta */}
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/quienes-somos" element={<QuienesSomos />} />
@@ -22,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/campanas/saman" element={<SamanPage />} />
         <Route path="/campanas/consultas-medicas" element={<ConsultasMedicasPage />} />
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="/donaciones" element={<Donaciones />} /> {/* ✅ Nueva ruta */}
+        <Route path="/donaciones" element={<Donaciones />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
