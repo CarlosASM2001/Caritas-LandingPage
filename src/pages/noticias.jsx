@@ -77,7 +77,7 @@ const Noticias = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-red-900 via-red-800 to-red-700 py-20">
+      <section className="relative bg-gradient-to-r from-[#6e0b14] via-[#5c0a0a] to-[#4b0e0e] py-20">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative container mx-auto px-4 text-center">
           <nav className="text-white/80 text-sm mb-4">

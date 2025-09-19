@@ -11,10 +11,12 @@ import SamanPage from './pages/saman.jsx';
 import ConsultasMedicasPage from './pages/consultasMedicas.jsx';
 import EmergenciaHumanitariaPage from './pages/emergenciaHumanitaria.jsx';
 import Donaciones from './pages/donaciones.jsx'; 
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/quienes-somos" element={<QuienesSomos />} />
