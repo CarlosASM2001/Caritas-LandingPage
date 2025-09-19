@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Navbar from "../components/Navbar.jsx";
 import PiePagina from "../components/piePagina.jsx";
@@ -136,22 +135,12 @@ export default function Donaciones() {
         />
         {/* Contenido */}
         <div className="relative container mx-auto px-6 py-24 md:py-28 text-center text-white">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight drop-shadow-md"
-          >
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight drop-shadow-md">
             Dona con Amor
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="mt-4 md:mt-6 max-w-3xl mx-auto text-base md:text-lg text-white/90"
-          >
+          </h1>
+          <p className="mt-4 md:mt-6 max-w-3xl mx-auto text-base md:text-lg text-white/90">
             Tu aporte ayuda a transformar vidas. Cáritas está al servicio de quienes más lo necesitan.
-          </motion.p>
+          </p>
         </div>
         
         <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
@@ -161,14 +150,9 @@ export default function Donaciones() {
 
       {/* ¿POR QUÉ DONAR?  */}
       <section className="bg-[#6e0b14] py-16 px-6 lg:px-32 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-3xl md:text-4xl font-bold text-white mb-10"
-        >
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
           ¿Por qué <span className="text-yellow-300">donar</span>?
-        </motion.h2>
+        </h2>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
@@ -184,17 +168,10 @@ export default function Donaciones() {
               p: "Siguiendo el llamado del Papa Francisco, llevamos la caricia de la Iglesia a los más vulnerables.",
             },
           ].map((card, i) => (
-            <motion.div
-              key={card.t}
-              whileHover={{ scale: 1.02 }}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="bg-white/80 backdrop-blur-sm border border-white/60 rounded-2xl p-8 text-left shadow-[0_10px_25px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.12)]"
-            >
+            <div className="bg-white/80 backdrop-blur-sm border border-white/60 rounded-2xl p-8 text-left shadow-[0_10px_25px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
               <h3 className="text-xl font-semibold text-[#7a1212] mb-3">{card.t}</h3>
               <p className="text-gray-700 leading-relaxed">{card.p}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
@@ -202,7 +179,7 @@ export default function Donaciones() {
       {/* BLOQUE IMAGEN  */}
       <section className="bg-white py-16 px-6 lg:px-32">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <motion.img
+          <img
             src={ayuda}
             alt="Apoyo Cáritas"
             className="rounded-2xl w-full object-cover shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
@@ -212,23 +189,13 @@ export default function Donaciones() {
             transition={{ duration: 0.6 }}
           />
           <div>
-            <motion.h2
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-3xl font-bold text-[#5c0a0a] mb-4"
-            >
+            <h2 className="text-3xl font-bold text-[#5c0a0a] mb-4">
               Cada donación es esperanza
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1, duration: 0.6 }}
-              className="text-gray-700 leading-relaxed text-lg mb-6"
-            >
+            </h2>
+            <p className="text-gray-700 leading-relaxed text-lg mb-6">
               Con tu ayuda, Cáritas puede llegar a más comunidades, brindar apoyo a familias en crisis,
               acompañar a los enfermos y alimentar a quienes sufren hambre.
-            </motion.p>
+            </p>
             <p className="text-gray-700 leading-relaxed text-lg">
               Muy pronto habilitaremos nuestra cuenta oficial para que puedas realizar tu aporte de manera segura.
             </p>

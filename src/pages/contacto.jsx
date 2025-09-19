@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Navbar from "../components/Navbar.jsx";
 import PiePagina from "../components/piePagina.jsx";
 import { MapPin, Phone, Mail } from "lucide-react";
@@ -31,23 +30,20 @@ export default function Contacto() {
             <span className="text-white">Contáctanos</span>
           </nav>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 14 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+          <h1
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-2 drop-shadow-sm"
           >
             Contáctanos
-          </motion.h1>
+          </h1>
 
-          <motion.p
+          <p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.12 }}
             className="text-base md:text-lg text-white/90 max-w-2xl mx-auto"
           >
             Estamos para ayudarte. Elige el canal que prefieras y conversemos.
-          </motion.p>
+          </p>
         </div>
       </section>
 
@@ -65,12 +61,7 @@ export default function Contacto() {
 
         <div className="container mx-auto px-6 lg:px-20 grid gap-6 md:grid-cols-3 text-left">
           {/* Dirección */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_32px_rgba(0,0,0,0.10)] hover:-translate-y-0.5 transition"
-          >
+          <div className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_32px_rgba(0,0,0,0.10)] hover:-translate-y-0.5 transition">
             <div className="relative">
               <div className="absolute inset-0 rounded-full ring-2 ring-yellow-300/60 -m-1" aria-hidden="true" />
               <div className="bg-[#f8d7da] p-3 rounded-full">
@@ -81,10 +72,10 @@ export default function Contacto() {
               <h4 className="font-semibold text-[#5c0a0a]">Dirección</h4>
               <p className="text-gray-700">{siteConfig.ubicacion}</p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Teléfono */}
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -100,13 +91,10 @@ export default function Contacto() {
               <h4 className="font-semibold text-[#5c0a0a]">Teléfono</h4>
               <p className="text-gray-700">{siteConfig.contacto.telefono}</p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Email */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+          <div
             className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_32px_rgba(0,0,0,0.10)] hover:-translate-y-0.5 transition"
           >
             <div className="relative">
@@ -119,7 +107,7 @@ export default function Contacto() {
               <h4 className="font-semibold text-[#5c0a0a]">Email</h4>
               <p className="text-gray-700">{siteConfig.contacto.email}</p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 

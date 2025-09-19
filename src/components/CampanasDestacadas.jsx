@@ -1,27 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import CampaignCard from './campaigns/CampaignCard.jsx';
+import { campaignsData } from '../data/campaignData.js';
 
-function DonationCTA() {
+function CampanasDestacadas() {
   return (
-    <section className="bg-[white] py-12">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#2b1b1b] mb-4">
-          Apoya Nuestra Labor
-        </h2>
-        <p className="max-w-3xl mx-auto text-gray-700 mb-6">
-          Tu contribución nos permite seguir transformando vidas y construyendo un futuro más justo para todos.
-        </p>
-        <div className="flex justify-center">
-          <Link
-            to="/donaciones"
-            className="bg-red-800 hover:bg-red-900 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-          >
-            Haz una Donación
-          </Link>
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-10">
+        <h2 className="text-center text-4xl md:text-5xl font-extrabold text-[#032b27] mb-12">Nuestras Campañas</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          {campaignsData.map((c) => (
+            <CampaignCard key={c.id} imageSrc={c.image} title={c.title} to={c.to} />
+          ))}
         </div>
       </div>
     </section>
   );
 }
 
-export default DonationCTA;
+export default CampanasDestacadas;
+

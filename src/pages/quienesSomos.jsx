@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import Navbar from "../components/Navbar.jsx";
 import {
   introduccion,
@@ -138,36 +137,20 @@ export default function QuienesSomos() {
           aria-hidden="true"
         />
         <div className="relative container mx-auto px-6 py-24 md:py-32 text-center text-white">
-          <motion.nav
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-white/80 text-sm mb-6"
-            aria-label="Breadcrumb"
-          >
+          <nav className="text-white/80 text-sm mb-6" aria-label="Breadcrumb">
             <span>Home</span> <span className="mx-2">/</span>
             <span className="text-white">Quiénes Somos</span>
-          </motion.nav>
+          </nav>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight drop-shadow-md"
-          >
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight drop-shadow-md">
             Servimos con <span className="text-red-300">caridad</span> y{" "}
             <span className="text-red-200">esperanza</span>
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="mt-4 md:mt-6 max-w-3xl mx-auto text-base md:text-lg text-white/90"
-          >
+          <p className="mt-4 md:mt-6 max-w-3xl mx-auto text-base md:text-lg text-white/90">
             Cáritas San Cristóbal acompaña a las comunidades más vulnerables, promoviendo
             dignidad, solidaridad y bien común.
-          </motion.p>
+          </p>
         </div>
         {/* Onda separadora */}
         <svg
@@ -183,7 +166,7 @@ export default function QuienesSomos() {
       {/* INTRODUCCIÓN */}
       <section className="bg-[#fff7f7] text-[#2b2b2b] font-sans px-6 lg:px-20 py-16">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <motion.img
+          <img
             src={introduccion.imagen}
             alt="Cáritas en acción"
             className="rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] w-full object-cover"
@@ -193,22 +176,15 @@ export default function QuienesSomos() {
             transition={{ duration: 0.6 }}
           />
           <div>
-            <motion.h2
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-3xl md:text-4xl font-bold text-[#5c0a0a] mb-4"
+            <h2 className="text-3xl md:text-4xl font-bold text-[#5c0a0a] mb-4"
             >
               {introduccion.titulo2}
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1, duration: 0.6 }}
+            </h2>
+            <p
               className="text-lg leading-relaxed text-justify"
             >
               {introduccion.parrafo}
-            </motion.p>
+            </p>
           </div>
         </div>
       </section>
@@ -216,22 +192,15 @@ export default function QuienesSomos() {
       {/* MISIÓN Y VISIÓN */}
       <section className="relative py-16 bg-white">
         <div className="container mx-auto px-6 lg:px-20">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <h2
             className="text-3xl md:text-4xl font-bold text-[#5c0a0a] text-center mb-10"
           >
             Misión y Visión
-          </motion.h2>
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {misionVisionData.map((item, idx) => (
-              <motion.div
-                key={item.titulo || idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.1, duration: 0.5 }}
+              <div
                 className="bg-white/70 backdrop-blur-sm border border-white/40 shadow-[0_10px_30px_rgba(0,0,0,0.08)] rounded-2xl p-8 hover:shadow-[0_12px_36px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition"
               >
                 <div className="mb-4 flex justify-center">
@@ -241,7 +210,7 @@ export default function QuienesSomos() {
                   {item.titulo}
                 </h3>
                 <p className="text-gray-700 text-center leading-relaxed">{item.descripcion}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
