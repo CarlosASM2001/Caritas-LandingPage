@@ -4,17 +4,17 @@ import PiePagina from '../components/piePagina.jsx';
 import ImageCarousel from '../components/ImageCarousel.jsx';
 
 const emergenciaImages = [
-  '/src/assets/emergenciaHumanitaria/imagen1.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen2.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen3.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen4.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen5.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen6.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen7.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen8.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen9.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen10.jpg',
-  '/src/assets/emergenciaHumanitaria/imagen11.jpg',
+  new URL('../assets/emergenciahumanitaria/imagen1.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen2.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen3.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen4.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen5.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen6.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen7.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen8.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen9.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen10.jpg', import.meta.url).href,
+  new URL('../assets/emergenciahumanitaria/imagen11.jpg', import.meta.url).href,
 ];
 
 export default function EmergenciaHumanitariaPage() {

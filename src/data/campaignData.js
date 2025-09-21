@@ -1,5 +1,5 @@
 import samanLogo from '../assets/SAMAN/samanlogo.jpg';
-import consultasLogo from '../assets/consultasmedicas/DSCN0248.jpg';
+import consultasLogo from '../assets/consultasmedicas/DSCN0248.JPG';
 import emergenciaLogo from '../assets/emergenciahumanitaria/emergencia.jpg';
 
 export const campaignsData = [

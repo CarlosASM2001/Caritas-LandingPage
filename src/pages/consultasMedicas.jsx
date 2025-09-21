@@ -4,14 +4,14 @@ import PiePagina from '../components/piePagina.jsx';
 import ImageCarousel from '../components/ImageCarousel.jsx';
 
 const consultasImages = [
-  '/src/assets/consultasmedicas/DSCN0185.JPG',
-  '/src/assets/consultasmedicas/DSCN0173.JPG',
-  '/src/assets/consultasmedicas/DSCN0161.JPG',
-  '/src/assets/consultasmedicas/DSCN0156.JPG',
-  '/src/assets/consultasmedicas/DSCN0155.JPG',
-  '/src/assets/consultasmedicas/DSCN0136.JPG',
-  '/src/assets/consultasmedicas/DSCN0128.JPG',
-  '/src/assets/consultasmedicas/DSCN0068.JPG',
+  new URL('../assets/consultasmedicas/DSCN0185.JPG', import.meta.url).href,
+  new URL('../assets/consultasmedicas/DSCN0173.JPG', import.meta.url).href,
+  new URL('../assets/consultasmedicas/DSCN0161.JPG', import.meta.url).href,
+  new URL('../assets/consultasmedicas/DSCN0156.JPG', import.meta.url).href,
+  new URL('../assets/consultasmedicas/DSCN0155.JPG', import.meta.url).href,
+  new URL('../assets/consultasmedicas/DSCN0136.JPG', import.meta.url).href,
+  new URL('../assets/consultasmedicas/DSCN0128.JPG', import.meta.url).href,
+  new URL('../assets/consultasmedicas/DSCN0068.JPG', import.meta.url).href,
 ];
 
 export default function ConsultasMedicasPage() {
