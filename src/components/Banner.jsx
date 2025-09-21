@@ -10,7 +10,7 @@ function Banner() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/src/assets/banner7.jpg')"
+          backgroundImage: `url(${new URL('../assets/banner7.jpg', import.meta.url).href})`
         }}
       ></div>
       
