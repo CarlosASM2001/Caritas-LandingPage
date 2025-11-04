@@ -8,8 +8,14 @@ function CampanasDestacadas() {
       <div className="container mx-auto px-10">
         <h2 className="text-center text-4xl md:text-5xl font-extrabold text-[#032b27] mb-12">Nuestras Campañas</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {campaignsData.map((c) => (
-            <CampaignCard key={c.id} imageSrc={c.image} title={c.title} to={c.to} />
+          {campaignsData.map((campaign) => (
+            <CampaignCard
+              key={campaign.id}
+              imageSrc={campaign.image}
+              title={campaign.title}
+              to={campaign.to}
+              appointmentLink={campaign.appointmentLink}
+            />
           ))}
         </div>
       </div>
@@ -18,4 +24,3 @@ function CampanasDestacadas() {
 }
 
 export default CampanasDestacadas;
-

@@ -43,8 +43,22 @@ export default function ConsultasMedicasPage() {
                   <li>Medicina Interna</li>
                 </ul>
                 <p>
-                  Las consultas son totalmente gratuitas y deben agendarse previamente por nuestro WhatsApp Institucional <span className="font-semibold text-red-800">+58 276-3447809</span>. Cuando haya disponibilidad del médico, se les informa la fecha y hora para evitar esperas innecesarias.
+                  Las consultas son totalmente gratuitas y deben agendarse previamente por nuestro WhatsApp Institucional <span className="font-semibold text-red-800">+58 276-3447809</span> o completando el formulario en línea. Cuando haya disponibilidad del médico, se les informa la fecha y hora para evitar esperas innecesarias.
                 </p>
+                <div className="mt-6 bg-white border border-red-100 rounded-2xl shadow-md p-6">
+                  <h3 className="text-xl font-bold text-[#032b27] mb-2">Agenda tu consulta médica en línea</h3>
+                  <p className="text-gray-700 mb-4">
+                    Completa el formulario con tus datos y la especialidad que necesitas. Nuestro equipo te contactará para confirmar la fecha y hora disponibles.
+                  </p>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfV8_xUmNps8ji5xviwjFTFwhxuNuR1ONX2RYiQtbpGYmf2lQ/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-red-700 text-white font-semibold rounded-full shadow hover:bg-red-800 transition-colors"
+                  >
+                    Ir al formulario de agendamiento
+                  </a>
+                </div>
                 <p className="mt-4">
                   Además, contamos con un pequeño banco de medicinas. Si el médico le receta algún medicamento y lo tenemos disponible, se lo donamos mostrando el respectivo récipe.
                 </p>
@@ -64,4 +78,3 @@ export default function ConsultasMedicasPage() {
     </div>
   );
 }
-
