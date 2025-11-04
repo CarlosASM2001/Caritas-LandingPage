@@ -356,25 +356,6 @@ export default function QuienesSomos() {
       <section className="w-full py-16 bg-[#fdecea] text-red-800 text-center px-4">
         <h2 className="text-3xl font-bold mb-8 leading-tight">Miembros Directivos</h2>
         <div className="relative max-w-6xl mx-auto">
-     
-          <button
-            onClick={handlePrevDirectivo}
-            disabled={currentDirectivoIndex === 0}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white shadow-lg rounded-full p-3 hover:bg-red-50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed group"
-            aria-label="Directivo anterior"
-          >
-            <ChevronLeft className="w-6 h-6 text-red-800 group-hover:text-red-900" />
-          </button>
-
-        
-          <button
-            onClick={handleNextDirectivo}
-            disabled={currentDirectivoIndex >= maxDirectivoIndex}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white shadow-lg rounded-full p-3 hover:bg-red-50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed group"
-            aria-label="Siguiente directivo"
-          >
-            <ChevronRight className="w-6 h-6 text-red-800 group-hover:text-red-900" />
-          </button>
 
           {/* Carrusel */}
           <div className="overflow-hidden">

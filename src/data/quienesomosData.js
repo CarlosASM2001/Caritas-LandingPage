@@ -4,7 +4,7 @@ export const introduccion = {
   titulo: "Quiénes Somos",
   titulo2:"En Cáritas San Cristobal",
   parrafo: `Somos una organización de la Iglesia Católica en Venezuela, comprometida con la promoción de la dignidad humana, la justicia social y el desarrollo integral de las personas y comunidades más necesitadas. Trabajamos en acciones de promoción de los derechos humanos, construcción de paz, la asistencia a poblaciones vulnerables y la gestión del riesgo de desastres.`,
-  imagen: new URL('../assets/quienesSomos.jpg', import.meta.url).href, // resuelto por Vite
+  imagen: new URL('../assets/quienesSomos.jpg', import.meta.url).href, 
 };
 
 export const misionVisionData = [
@@ -84,7 +84,7 @@ export const principiosData = [
   }
 ];
 
-const directivoImg = new URL('../assets/directivo1.jpg', import.meta.url).href;
+const directivoImg = new URL('../assets/directivo2.jpg', import.meta.url).href;
 
 export const directivosData = [
   {
@@ -105,120 +105,6 @@ export const directivosData = [
     cargo: "Director Ejecutivo",
     imagen: directivoImg
   },
-  {
-    id: 4,
-    nombre: "Elvis Ramirez",
-    cargo: "Gestion social",
-    imagen: directivoImg
-  },
-  {
-    id: 5,
-    nombre: "Alissette Useche",
-    cargo: "Cordinadoras de relaciones institucionales",
-    imagen: directivoImg
-  },
-  {
-    id: 6,
-    nombre: "Sarahi Briceño",
-    cargo: "Gestor Pastoral Juvenil",
-    imagen: directivoImg
-  },
-  {
-    id: 7,
-    nombre: "Franklin Ramirez",
-    cargo: "Conductor",
-    imagen: directivoImg
-  },
-  {
-    id: 8,
-    nombre: "Joclandy Azuaje",
-    cargo: "Psicologo",
-    imagen: directivoImg
-  },
-  {
-    id: 9,
-    nombre: "Ana Ilse Lizcano",
-    cargo: "Gestor de Evaluacion y Monitoreo",
-    imagen: directivoImg
-  },
-  {
-    id: 10,
-    nombre: "David A. Velasco Berbesi",
-    cargo: "Gestion de redes y contenido digital",
-    imagen: directivoImg
-  },
-  {
-    id: 11,
-    nombre: "John Jairo Neiva Largo",
-    cargo: "Gestion de participacion comunitaria",
-    imagen: directivoImg
-  },
-  {
-    id: 12,
-    nombre: "Iris Estrella Moreno",
-    cargo: "Cordinadora de proyectos",
-    imagen: directivoImg
-  },
-  {
-    id: 13,
-    nombre: "Nancy Zulay Parada Roso",
-    cargo: "Cordinadora de gestion social-salud",
-    imagen: directivoImg
-  },
-  {
-    id: 14,
-    nombre: "Sonia Yolanda Parada Roso",
-    cargo: "Gestion Social",
-    imagen: directivoImg
-  },
-  {
-    id: 15,
-    nombre: "Francisco Javier Nieto",
-    cargo: "Medico",
-    imagen: directivoImg
-  },
-  {
-    id: 16,
-    nombre: "Rachel Villamizar",
-    cargo: "Medico",
-    imagen: directivoImg
-  },
-  {
-    id: 17,
-    nombre: "Nakary Vanegas",
-    cargo: "Gestion de relaciones y logistica",
-    imagen: directivoImg
-  },
-  {
-    id: 18,
-    nombre: "Yvan Miguel Ponte Gonzalez",
-    cargo: "Cordinador de voluntariado",
-    imagen: directivoImg
-  },
-  {
-    id: 19,
-    nombre: "Randy David Acosta",
-    cargo: "Gestion de integracion y desarrollo",
-    imagen: directivoImg
-  },
-  {
-    id: 20,
-    nombre: "Gabby Marynes Osorio Moros",
-    cargo: "Gestion de integracion y desarrollo",
-    imagen: directivoImg
-  },
-  {
-    id: 21,
-    nombre: "Yumary Consolacion Parada",
-    cargo: "Gestion de integracion y desarrollo",
-    imagen: directivoImg
-  },
-  {
-    id: 22,
-    nombre: "Laura Josefina Garcia de Araque",
-    cargo: "Gestion legal",
-    imagen: directivoImg
-  }
 ];
 
 

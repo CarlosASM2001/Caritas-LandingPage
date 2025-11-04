@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Menu, X, Facebook, Instagram } from "lucide-react";
+import { Menu, X, Facebook, Instagram, Youtube } from "lucide-react";
+import { IconBrandTiktok, IconBrandWhatsapp } from "@tabler/icons-react";
 import logo from "../assets/caritas_sc.png";
 import { Link } from "react-router-dom";
 import { siteConfig } from "../data/siteConfig";
@@ -75,6 +76,36 @@ function Navbar() {
               className="text-[#6e0b14] hover:text-[#2b1b1b] transition-colors"
             >
               <Instagram className="w-5 h-5" />
+            </a>
+            <a
+                href={siteConfig.redes.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Youtube"
+                className="text-[#6e0b14] hover:text-[#2b1b1b] transition-colors"
+                onClick={closeMobileDrawer}
+              >
+                <Youtube className="w-6 h-6" />
+            </a>
+            <a
+                href={siteConfig.redes.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Tiktok"
+                className="text-[#6e0b14] hover:text-[#2b1b1b] transition-colors"
+                onClick={closeMobileDrawer}
+              >
+                <IconBrandTiktok />
+            </a>
+            <a
+                href={siteConfig.redes.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Whatsapp"
+                className="text-[#6e0b14] hover:text-[#2b1b1b] transition-colors"
+                onClick={closeMobileDrawer}
+              >
+                <IconBrandWhatsapp />
             </a>
 
             {/* Botón Donar */}
@@ -180,6 +211,39 @@ function Navbar() {
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
+                <a
+                  href={siteConfig.redes.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="text-[#6e0b14] hover:text-[#2b1b1b] transition-colors"
+                  onClick={closeMobileDrawer}
+                >
+                  <Youtube className="w-5 h-5" />
+                </a>
+
+                <a
+                  href={siteConfig.redes.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Tiktok"
+                  className="text-[#6e0b14] hover:text-[#2b1b1b] transition-colors"
+                  onClick={closeMobileDrawer}
+                >
+                  <IconBrandTiktok />
+                </a>
+
+                <a
+                href={siteConfig.redes.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Whatsapp"
+                className="text-[#6e0b14] hover:text-[#2b1b1b] transition-colors"
+                onClick={closeMobileDrawer}
+                >
+                  <IconBrandWhatsapp />
+                </a>
+                
               </div>
             </div>
           </div>

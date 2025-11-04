@@ -1,5 +1,6 @@
 import logo from "../assets/caritas_sc.png";
-import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Youtube, Mail, MapPin, Phone } from "lucide-react";
+import { IconBrandTiktok, IconBrandWhatsapp } from "@tabler/icons-react";
 import { siteConfig } from "../data/siteConfig";
 
 export default function Footer() {
@@ -32,6 +33,33 @@ export default function Footer() {
               >
                 <Instagram className="w-5 h-5" />
               </a>
+
+              <a
+                  href={siteConfig.redes.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-300"
+                >
+                  <Youtube className="w-6 h-6" />
+              </a>
+
+              <a
+                href={siteConfig.redes.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-300"
+              >
+                <IconBrandTiktok />
+              </a>
+              <a
+                href={siteConfig.redes.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-300"
+                >
+                  <IconBrandWhatsapp />
+              </a>
+
             </div>
           </div>
 
