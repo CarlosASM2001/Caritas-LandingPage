@@ -1,4 +1,4 @@
-import logo from "../assets/caritas_sc.png";
+import logo from "../assets/caritas_blanco.png";
 import { Facebook, Instagram, Youtube, Mail, MapPin, Phone } from "lucide-react";
 import { IconBrandTiktok, IconBrandWhatsapp } from "@tabler/icons-react";
 import { siteConfig } from "../data/siteConfig";
@@ -109,10 +109,7 @@ export default function Footer() {
         </div>
 
         {/* Pie final */}
-        <div className="border-t border-white/30 py-4 text-center text-xs">
-          © {new Date().getFullYear()} {siteConfig.nombre}. Todos los derechos
-          reservados.
-        </div>
+        <div className="border-t border-white/30 py-4 text-center text-xs" />
       </div>
     </footer>
   );

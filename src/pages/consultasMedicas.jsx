@@ -43,7 +43,8 @@ export default function ConsultasMedicasPage() {
                   <li>Medicina Interna</li>
                 </ul>
                 <p>
-                  Las consultas son totalmente gratuitas y deben agendarse previamente por nuestro WhatsApp Institucional <span className="font-semibold text-red-800">+58 276-3447809</span> o completando el formulario en línea. Cuando haya disponibilidad del médico, se les informa la fecha y hora para evitar esperas innecesarias.
+                  Las consultas se ofrecen a costos solidarios, excepto las consultas de Pediatría, que son totalmente gratuitas.
+                  Todas deben agendarse previamente a través de nuestro WhatsApp Institucional<span className="font-semibold text-red-800">+58 276-3447809</span> o completando el formulario en línea. Cuando haya disponibilidad del médico, se les informa la fecha y hora para evitar esperas innecesarias.
                 </p>
                 <div className="mt-6 bg-white border border-red-100 rounded-2xl shadow-md p-6">
                   <h3 className="text-xl font-bold text-[#032b27] mb-2">Agenda tu consulta médica en línea</h3>
@@ -60,7 +61,7 @@ export default function ConsultasMedicasPage() {
                   </a>
                 </div>
                 <p className="mt-4">
-                  Además, contamos con un pequeño banco de medicinas. Si el médico le receta algún medicamento y lo tenemos disponible, se lo donamos mostrando el respectivo récipe.
+                  Disponemos de un pequeño banco de medicamentos. Solo debes enviar tu récipe médico y, si el medicamento se encuentra disponible, te lo entregamos como donación.
                 </p>
               </div>
             </div>
