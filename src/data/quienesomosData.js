@@ -84,26 +84,29 @@ export const principiosData = [
   }
 ];
 
-const directivoImg = new URL('../assets/directivo2.jpg', import.meta.url).href;
+const AndresImg = new URL('../assets/directivo2.jpg', import.meta.url).href;
+const JuanImg = new URL('../assets/directivo3.jpeg', import.meta.url).href;
+const LisandroImg = new URL('../assets/directivo1.jpeg', import.meta.url).href;
+
 
 export const directivosData = [
   {
     id: 1,
     nombre: "Monseñor Lisandro Rivas Duran",
     cargo: "Presidente",
-    imagen: directivoImg
+    imagen: LisandroImg
   },
   {
     id: 2,
     nombre: "Monseñor Juan Alberto Ayala",
     cargo: "Vice-Presidente",
-    imagen: directivoImg
+    imagen: JuanImg
   },
   {
     id: 3,
     nombre: "Andres Ricardo Ramirez Prato",
     cargo: "Director Ejecutivo",
-    imagen: directivoImg
+    imagen: AndresImg
   },
 ];
 
