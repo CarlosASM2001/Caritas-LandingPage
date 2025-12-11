@@ -62,7 +62,7 @@ export const principiosData = [
     id: 1,
     titulo: "Caridad",
     descripcion: "Base de nuestra acción pastoral y social en una ctitud de amor y compasión hacia los demás, especialmente hacia aquellos que sufren o están necesitados. Se manifiesta en acciones de ayuda, solidaridad y generosidad, tanto materiales como espirituales.",
-    imagen: new URL('../assets/banner9.jpg', import.meta.url).href
+    imagen: new URL('../assets/quienessomo2.webp', import.meta.url).href
   },
   {
     id: 2,
@@ -74,13 +74,13 @@ export const principiosData = [
     id: 3,
     titulo: "Solidaridad",
     descripcion: "Nos unimos a quienes más sufren, acompañándolos en su proceso de vida con empatía, respeto y compromiso. Promovemos relaciones de apoyo mutuo, fortaleciendo la fraternidad y construyendo una sociedad más justa y humana.",
-    imagen: new URL('../assets/banner4.jpg', import.meta.url).href
+    imagen: new URL('../assets/quienessomo1.heic', import.meta.url).href
   },
   {
     id: 4,
     titulo: "Dignidad de la Persona",
     descripcion: "El Caritas se cree que en la persona humana Dios Ha impreso su imagen y semejanza (cf. Gn 1, 26), confiriéndole una dignidad incomparable, En efecto, aparte de los derechos que el hombre adquiere con su propio trabajo, hay otros derechos que no proceden de ninguna obra realizada por él, sino de su dignidad esencial de persona. Este Principio le compromete a trabajar de manera preferencial por los mas pobres y excluidos en la protección y exigibilidad de sus derechos fundamentales.",
-    imagen: new URL('../assets/banner8.jpg', import.meta.url).href
+    imagen: new URL('../assets/quienessomo3.webp', import.meta.url).href
   }
 ];
 

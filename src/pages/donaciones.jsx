@@ -10,7 +10,7 @@ import donacion3 from "../assets/donacion3.jpg";
 
 // Secciones
 import francisco from "../assets/francisco.jpg";
-import ayuda from "../assets/banner9.jpg";
+import ayuda from "../assets/banner2.jpg";
 
 
 import alimentos from "../assets/alimentos.jpg";

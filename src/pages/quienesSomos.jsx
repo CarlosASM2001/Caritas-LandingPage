@@ -172,7 +172,6 @@ export default function QuienesSomos() {
             className="rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] w-full object-cover"
             loading="lazy"
             initial={{ opacity: 0, scale: 0.98 }}
-            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
           />
           <div>
@@ -199,8 +198,9 @@ export default function QuienesSomos() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {misionVisionData.map((item, idx) => (
+            {misionVisionData.map((item) => (
               <div
+                key={item.id}
                 className="bg-white/70 backdrop-blur-sm border border-white/40 shadow-[0_10px_30px_rgba(0,0,0,0.08)] rounded-2xl p-8 hover:shadow-[0_12px_36px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition"
               >
                 <div className="mb-4 flex justify-center">
@@ -329,28 +329,6 @@ export default function QuienesSomos() {
     </div>
   </div>
 </section>
-
-
-      {/* CITA */}
-      <section className="relative w-full" aria-label="Cita Papa Francisco">
-        <div
-          className="h-[420px] bg-center bg-cover"
-          style={{ backgroundImage: `url(${francisco})` }}
-        />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="max-w-4xl mx-auto px-6 text-center text-white">
-            <span className="inline-block text-sm uppercase tracking-widest text-white/80 mb-3">
-              Palabras que inspiran
-            </span>
-            <h2 className="text-2xl md:text-4xl font-bold leading-snug">
-              “Cáritas es la caricia de la Iglesia a su pueblo, la caricia de la
-              Madre Iglesia a sus hijos, la ternura y la cercanía.”
-            </h2>
-            <p className="mt-4 text-white/80">— Papa Francisco</p>
-          </div>
-        </div>
-      </section>
 
       {/* DIRECTIVOS */}
       <section className="w-full py-16 bg-[#fdecea] text-red-800 text-center px-4">
