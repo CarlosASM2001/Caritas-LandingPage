@@ -10,8 +10,7 @@ const consultasImages = [
   new URL('../assets/consultasmedicas/DSCN0156.JPG', import.meta.url).href,
   new URL('../assets/consultasmedicas/DSCN0155.JPG', import.meta.url).href,
   new URL('../assets/consultasmedicas/DSCN0136.JPG', import.meta.url).href,
-  new URL('../assets/consultasmedicas/DSCN0128.JPG', import.meta.url).href,
-  new URL('../assets/consultasmedicas/DSCN0068.JPG', import.meta.url).href,
+
 ];
 
 export default function ConsultasMedicasPage() {

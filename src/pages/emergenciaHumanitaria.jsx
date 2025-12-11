@@ -6,14 +6,8 @@ import ImageCarousel from '../components/ImageCarousel.jsx';
 const emergenciaImages = [
   new URL('../assets/emergenciahumanitaria/imagen1.jpg', import.meta.url).href,
   new URL('../assets/emergenciahumanitaria/imagen2.jpg', import.meta.url).href,
-  new URL('../assets/emergenciahumanitaria/imagen3.jpg', import.meta.url).href,
-  new URL('../assets/emergenciahumanitaria/imagen4.jpg', import.meta.url).href,
-  new URL('../assets/emergenciahumanitaria/imagen5.jpg', import.meta.url).href,
   new URL('../assets/emergenciahumanitaria/imagen6.jpg', import.meta.url).href,
   new URL('../assets/emergenciahumanitaria/imagen7.jpg', import.meta.url).href,
-  new URL('../assets/emergenciahumanitaria/imagen8.jpg', import.meta.url).href,
-  new URL('../assets/emergenciahumanitaria/imagen9.jpg', import.meta.url).href,
-  new URL('../assets/emergenciahumanitaria/imagen10.jpg', import.meta.url).href,
   new URL('../assets/emergenciahumanitaria/imagen11.jpg', import.meta.url).href,
 ];
 

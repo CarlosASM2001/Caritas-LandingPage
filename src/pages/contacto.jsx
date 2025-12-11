@@ -38,7 +38,6 @@ export default function Contacto() {
 
           <p
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.12 }}
             className="text-base md:text-lg text-white/90 max-w-2xl mx-auto"
           >
@@ -77,7 +76,6 @@ export default function Contacto() {
           {/* Teléfono */}
           <div
             initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="flex items-start gap-4 p-6 bg-white rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_32px_rgba(0,0,0,0.10)] hover:-translate-y-0.5 transition"
           >

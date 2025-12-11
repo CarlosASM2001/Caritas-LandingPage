@@ -6,10 +6,7 @@ import ImageCarousel from '../components/ImageCarousel.jsx';
 const samanImages = [
   new URL('../assets/SAMAN/DSCN0184.JPG', import.meta.url).href,
   new URL('../assets/SAMAN/DSCN0180.JPG', import.meta.url).href,
-  new URL('../assets/SAMAN/DSCN0056.JPG', import.meta.url).href,
-  new URL('../assets/SAMAN/DSCN0055.JPG', import.meta.url).href,
   new URL('../assets/SAMAN/DSCN0054.JPG', import.meta.url).href,
-  new URL('../assets/SAMAN/DSCN0045.JPG', import.meta.url).href,
   new URL('../assets/SAMAN/DSCN0044.JPG', import.meta.url).href,
   new URL('../assets/SAMAN/DSCN0011.JPG', import.meta.url).href,
 ];
